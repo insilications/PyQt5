@@ -7,11 +7,13 @@ Source0  : https://sourceforge.net/projects/pyqt/files/PyQt5/PyQt-5.9.2/PyQt5_gp
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : GPL-3.0
-BuildRequires : qt-everywhere-opensource-src
-BuildRequires : qt-everywhere-opensource-src-dev
 BuildRequires : sip
 BuildRequires : python3-dev
 BuildRequires : mesa-dev
+
+BuildRequires : qtbase-dev qtxmlpatterns-dev qtcanvas3d qtcharts-dev qtconnectivity-dev qtdeclarative-dev qtgraphicaleffects qtimageformats-dev qtlocation-dev
+BuildRequires : qtmultimedia-dev qtquickcontrols qtquickcontrols2 qtscript-dev qtscxml-dev qtsensors-dev qtserialbus-dev qtserialport-dev
+BuildRequires : qtsvg-dev qttools-dev qttranslations qtvirtualkeyboard-dev qtwebchannel-dev qtwebsockets-dev qtx11extras-dev qtxmlpatterns-dev
 
 
 %description
@@ -47,5 +49,6 @@ rm -rf %{buildroot}
 /usr/bin/pylupdate5
 /usr/bin/pyrcc5
 /usr/bin/pyuic5
-/usr/plugins/PyQt5/libpyqt5qmlplugin.so
-/usr/plugins/designer/libpyqt5.so
+/usr/lib64/qt5/plugins/PyQt5/libpyqt5qmlplugin.so
+/usr/lib64/qt5/plugins/designer/libpyqt5.so
+
