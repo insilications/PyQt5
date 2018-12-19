@@ -7,9 +7,10 @@ Source0  : https://sourceforge.net/projects/pyqt/files/PyQt5/PyQt-5.9.2/PyQt5_gp
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : GPL-3.0
-BuildRequires : sip
+BuildRequires : sip sip-dev
 BuildRequires : python3-dev
 BuildRequires : mesa-dev
+BuildRequires : buildreq-kde
 
 BuildRequires : qtbase-dev qtxmlpatterns-dev qtcanvas3d qtcharts-dev qtconnectivity-dev qtdeclarative-dev qtgraphicaleffects qtimageformats-dev qtlocation-dev
 BuildRequires : qtmultimedia-dev qtquickcontrols qtquickcontrols2 qtscript-dev qtscxml-dev qtsensors-dev qtserialbus-dev qtserialport-dev
@@ -33,7 +34,7 @@ export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
 export SOURCE_DATE_EPOCH=1515338975
-python3 configure.py --confirm-license
+python3 configure.py --confirm-license --verbose --disable=QtTest
 
 make  %{?_smp_mflags}
 
@@ -45,10 +46,8 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root,-)
 /usr/share/sip/PyQt5
-/usr/lib/python3.6/site-packages/PyQt5/
+/usr/lib/python3.*/site-packages/PyQt5/
 /usr/bin/pylupdate5
 /usr/bin/pyrcc5
 /usr/bin/pyuic5
-/usr/lib64/qt5/plugins/PyQt5/libpyqt5qmlplugin.so
-/usr/lib64/qt5/plugins/designer/libpyqt5.so
 
