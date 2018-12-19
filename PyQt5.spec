@@ -1,7 +1,7 @@
 #
 Name     : PyQt5
 Version  : 5.9.2
-Release  : 3
+Release  : 4
 URL      : https://sourceforge.net/projects/pyqt/files/PyQt5/PyQt-5.9.2/PyQt5_gpl-5.9.2.tar.gz
 Source0  : https://sourceforge.net/projects/pyqt/files/PyQt5/PyQt-5.9.2/PyQt5_gpl-5.9.2.tar.gz
 Summary  : No detailed summary available
