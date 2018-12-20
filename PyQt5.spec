@@ -11,6 +11,7 @@ BuildRequires : sip sip-dev
 BuildRequires : python3-dev
 BuildRequires : mesa-dev
 BuildRequires : buildreq-kde
+BuildRequires : qscintilla qscintilla-dev
 
 BuildRequires : qtbase-dev qtxmlpatterns-dev qtcanvas3d qtcharts-dev qtconnectivity-dev qtdeclarative-dev qtgraphicaleffects qtimageformats-dev qtlocation-dev
 BuildRequires : qtmultimedia-dev qtquickcontrols qtquickcontrols2 qtscript-dev qtscxml-dev qtsensors-dev qtserialbus-dev qtserialport-dev
@@ -50,4 +51,4 @@ rm -rf %{buildroot}
 /usr/bin/pylupdate5
 /usr/bin/pyrcc5
 /usr/bin/pyuic5
-
+/usr/share/qt5/qsci/api/python/PyQt5.api
