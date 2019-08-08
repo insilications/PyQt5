@@ -1,0 +1,20 @@
+From 732b2806a801357cd9a7898fb215bcab991b7d07 Mon Sep 17 00:00:00 2001
+From: William Douglas <william.douglas@intel.com>
+Date: Wed, 11 Jul 2018 03:44:23 +0000
+Subject: [PATCH] Add configure to generate Makefile
+
+---
+ configure | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100755 configure
+
+diff --git a/configure b/configure
+new file mode 100755
+index 0000000..4343a2b
+--- /dev/null
++++ b/configure
+@@ -0,0 +1 @@
++python3 configure.py --confirm-license --verbose --disable=QtTest
+-- 
+2.18.0
+
