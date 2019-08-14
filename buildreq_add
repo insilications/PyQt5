@@ -32,6 +32,7 @@ qttools-dev
 qttranslations
 qtvirtualkeyboard-dev
 qtwebchannel-dev
+qtwebengine-dev
 qtwebsockets-dev
 qtx11extras-dev
 qtxmlpatterns-dev

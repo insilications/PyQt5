@@ -1,4 +1,1340 @@
+2019-07-04  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* NEWS:
+	Released as v5.13.0.
+	[1592be9a7612] [5.13.0]
+
+	* qpy/QtNetwork/qpynetwork_qhash.sip:
+	Fixed the conversion of the result of
+	QNetworkCacheMetaData.attributes().
+	[7a790979cc76]
+
+2019-07-02  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* NEWS:
+	Updated the NEWS file.
+	[4f43ce95dd35]
+
+2019-07-01  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Fixed building against Qt v5.13.0 on Windows.
+	[20b114bd92ba]
+
+	* lib/configure.py:
+	Fix building with sip5 on Windows.
+	[4ee512d20432]
+
+	* qpy/QtCore/qpycore_qstring.cpp:
+	Fixes for building against Python v2.
+	[e5dd514fdba6]
+
+2019-06-30  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/configure.py:
+	We stopped updating after a new patch version of Qt.
+	[fa00587b11b3]
+
+2019-06-29  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Updated QtTest, QtWebChannel, QtWebSockets, QtWidgets, QtXml and
+	QtXmlPatterns to Qt v5.13.0.
+	[5a6b19710480]
+
+	* PyQt5.msp:
+	Updated QtQml, QtQuick, QtQuickWidgets, QtRemoteObjects, QtSensors,
+	QtSerialPort, QtSql and QtSvg for Qt v5.13.0.
+	[1efbbbdd5935]
+
+2019-06-27  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp, qpy/QtPrintSupport/qpyprintsupport_qlist.sip:
+	Updated QtPositioning and QtPrintSupport for Qt v5.13.0.
+	[88f1e11d6196]
+
+2019-06-26  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Updated QtNetworkAuth, QtNfc and QtOpenGL for Qt v5.13.0.
+	[c7c509085f3a]
+
+	* PyQt5.msp:
+	Updated QtLocation, QtMultimedia, QtMultimediaWidgets and QtNetwork
+	for Qt v5.13.0.
+	[bcbfd98dfbc7]
+
+	* PyQt5.msp, lib/SubclassCode/QtHelp.versions:
+	Updated QtHelp for Qt v5.13.0.
+	[717494d15859]
+
+	* PyQt5.msp:
+	Updated QtDBus, QtDesigner and QtGui for Qt v5.13.0.
+	[b8478519a504]
+
+	* QAxContainer/qaxbase.sip:
+	Updated QAxContainer for Qt v5.13.0.
+	[8e09194d3ed2]
+
+	* PyQt5.msp, lib/SubclassCode/QtCore.versions:
+	Updated QtBluetooth and QtCore for Qt v5.13.0.
+	[140145f8f1a8]
+
+2019-06-25  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* Merged the v5.12.3 release.
+	[be2545659bbb]
+
+	* .hgtags:
+	Added tag 5.12.3 for changeset 8c3a9f671ec5
+	[c110974325ce] <5.12-maint>
+
+	* NEWS:
+	Released as v5.12.3.
+	[8c3a9f671ec5] [5.12.3] <5.12-maint>
+
+	* NEWS:
+	Updated the NEWS file.
+	[6b074b64e411] <5.12-maint>
+
+	* lib/configure.py, qpy/QtCore/qpycore_api.h,
+	qpy/QtCore/qpycore_post_init.cpp.in, qpy/QtCore/qpycore_qt_conf.cpp:
+	The support for qt.conf is now enabled at run time rather than
+	compile time.
+	[59568b1d96e6] <5.12-maint>
+
+	* lib/configure.py:
+	Fixed __init__.py on Windows for the bundled copy of OpenSSL.
+	[e84650f7cf69] <5.12-maint>
+
+2019-06-24  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* Merged the lates 5.12-maint changes.
+	[bf79e402f77f]
+
+	* PyQt5.msp:
+	QObject.__getattr__() now accepts a utf-8 encoded attribute name.
+	[8d83d3192363] <5.12-maint>
+
+	* lib/configure.py:
+	Fixes for Python v3.8 on Windows.
+	[f42c4fc95380] <5.12-maint>
+
+2019-06-20  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* Merged the 5.12-maint branch.
+	[5dcb488f8a1e]
+
+	* PyQt5.msp:
+	Added support for Qt v5.12.4.
+	[8f10c119b8c0] <5.12-maint>
+
+	* lib/configure.py:
+	Added the --abi-version option to configire.py.
+	[0769b17197a0] <5.12-maint>
+
+2019-06-18  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	QCoreApplication can now be used as a context manager.
+	[8c5ae57d1d1b] <5.12-maint>
+
+2019-06-17  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/configure.py:
+	Update configure.py for the latest sip5 changes.
+	[2c5923582a51] <5.12-maint>
+
+2019-06-15  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Added WA_ContentsMarginsRespectsSafeArea as if it as added in Qt
+	v5.11.0 although it was actually added (undocumented) in Qt v5.10.1.
+	[f846f255111c] <5.12-maint>
+
+2019-05-22  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* pyuic/uic/Compiler/compiler.py, pyuic/uic/__init__.py,
+	pyuic/uic/uiparser.py:
+	Make pyuic more resilient when given non-ui files.
+	[7f9ad7d2b87d] <5.12-maint>
+
+2019-05-06  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* .hgtags:
+	Added tag 5.12.2 for changeset 37e48229d59a
+	[bec1f0ae4bd3] <5.12-maint>
+
+	* NEWS:
+	Released as v5.12.2.
+	[37e48229d59a] [5.12.2] <5.12-maint>
+
+	* NEWS:
+	Updated the NEWS file.
+	[d5e5edec0d1d] <5.12-maint>
+
+2019-05-02  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Removed the sub-class convertor code for QGraphicsVideoItem as the
+	assumption it is based on is too unsafe.
+	[350a409dc097] <5.12-maint>
+
+	* PyQt5.msp:
+	Renamed the True and False members of QCborSimpleType.
+	[ef294140ba74] <5.12-maint>
+
+2019-04-19  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Updated for Qt v5.12.3.
+	[2477434943e9] <5.12-maint>
+
+2019-04-15  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/configure.py:
+	Check that sip5-module ran successfully.
+	[1db5050c67fe] <5.12-maint>
+
+2019-04-14  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* config-tests/cfgtest_QtCore.cpp, lib/configure.py:
+	Use sip v5 if it is installed.
+	[604795867c85] <5.12-maint>
+
+	* PyQt5.msp:
+	Added QOpenGLContext.getProcAddress().
+	[4cdfeee895e1] <5.12-maint>
+
+2019-04-02  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* rb-product:
+	Added the 'RequiresDist' field to the product file.
+	[273e02f87c28] <5.12-maint>
+
+2019-04-01  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* qpy/pylupdate/fetchtr.cpp:
+	Added support for Python fstrings to pylupdate.
+	[1000b6b9b7a8] <5.12-maint>
+
+2019-03-19  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* .hgtags:
+	Added tag 5.12.1 for changeset 19c22cf8059b
+	[33d51713a566] <5.12-maint>
+
+	* NEWS:
+	Released as v5.12.1.
+	[19c22cf8059b] [5.12.1] <5.12-maint>
+
+	* PyQt5.msp:
+	Fixed QIcon(QIconEngine) to reflect that the engine is explicitly
+	shared between every copy of the icon.
+	[85ce20a0fa09] <5.12-maint>
+
+2019-03-18  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* NEWS:
+	Updated the NEWS file.
+	[cc3a848d0b27] <5.12-maint>
+
+2019-03-17  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Updated for Qt v5.12.2.
+	[71df8ce4b154] <5.12-maint>
+
+2019-03-06  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* qpy/QtQml/qpyqmlobject.cpp, qpy/QtQml/qpyqmlobject.h:
+	Eliminated a warning message from QObject::connect() in (hopefully)
+	benign circumstances.
+	[0950192b85ee] <5.12-maint>
+
+	* qpy/QtQuick/qpyquickitem.cpp, qpy/QtQuick/qpyquickitem.h:
+	Increased the number of QQuickItem types that can be registered from
+	30 to 60.
+	[1916f00c5b9e] <5.12-maint>
+
+	* PyQt5.msp:
+	Fixed the QPolygon ctors that take a list argument so that
+	unpickling works.
+	[329dbcbceeb7] <5.12-maint>
+
+2019-02-21  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Updated sub-class convertors to switch to the QObject convertor
+	rather than resolve (in a limited way) QObject based QGraphicItems.
+	Make sure the QObject base type is always used when switching.
+	[e83237b00873] <5.12-maint>
+
+2019-02-19  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* pyuic/uic/properties.py:
+	Fixed pyuic's handling of 'sizePolicy' properties.
+	[23a0e1edccc3] <5.12-maint>
+
+	* qpy/pylupdate/fetchtr.cpp:
+	Fixed pylupdate to handle empty strings at the end of a line so that
+	the line number remains correct.
+	[df2d5e1f4012] <5.12-maint>
+
+2019-02-04  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* .hgtags:
+	Added tag 5.12 for changeset 526660b54717
+	[41a56ae09f54]
+
+	* NEWS:
+	Released as v5.12.
+	[526660b54717] [5.12]
+
+	* PyQt5.msp:
+	Fixed the QNearFieldManager.adapterStateChanged() signal.
+	[bc192094e603]
+
+2019-02-02  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* NEWS, PyQt5.msp:
+	Updated for Qt v5.12.1.
+	[e02bdf1210e0]
+
+2019-01-25  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* qpy/QtQml/qpyqml_register_type.cpp, qpy/QtQml/qpyqmlvalidator.cpp,
+	qpy/QtQml/qpyqmlvalidator.h:
+	Added support for QML validators implemented in Python.
+	[e5fedd29154f]
+
+2019-01-24  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* pyuic/uic/Compiler/compiler.py, pyuic/uic/__init__.py:
+	More PEP8-related updates for pyuic.
+	[a059eeb3140a]
+
+2019-01-07  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Replaced the PyQtFlags class annotation with PyQtFlagsEnums.
+	[9a261dc29075]
+
+2019-01-04  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* pyuic/uic/properties.py:
+	Added UInt as a property type in pyuic.
+	[40e805c9b888]
+
+2019-01-02  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* pyuic/uic/Compiler/compiler.py:
+	Improve the PEP 8 compatibility for pyuic generated output.
+	[ca3cda506000]
+
+2018-12-23  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Fixed a type hint in QtRemoteObjects.
+	[b8cca9cc8457]
+
+2018-12-21  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Completed the QtRemoteObjects support.
+	[76378a026396]
+
+	* PyQt5.msp:
+	Added the QtRemoteObjects sub-class convertor code.
+	[7cb90f77fd20]
+
+	* lib/SubclassCode/mksccode.py:
+	Updated the convertor code generator for PyQt5.sip.
+	[626bc555459b]
+
+	* PyQt5.msp:
+	Implemented the easy-to-implement QtRemoteObjects support.
+	[11eab8cc583c]
+
+	* examples/remoteobjects/simpleswitch/registryconnecteddynamicclient.p
+	y, examples/remoteobjects/simpleswitch/registryconnecteddynamicserve
+	r.py:
+	Added the registry based remote objecst examples.
+	[e07030366ec0]
+
+	* examples/remoteobjects/simpleswitch/directconnectdynamicserver.py:
+	Updated the directconnectdynamicserver.py.
+	[b857b5a82573]
+
+	* examples/remoteobjects/simpleswitch/directconnectdynamicserver.py:
+	Added the (almost working correctly) directconnectdynamicserver.py
+	example.
+	[4553381e1277]
+
+	* METADATA.in:
+	Corrected the wheel meta-data version.
+	[b163e65ec668]
+
+2018-12-20  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* qpy/QtCore/qpycore_chimera_storage.cpp:
+	Eliminated a Qt warning message creating a QVariant using
+	QMetaType::Void.
+	[564438b84b2f]
+
+	* NEWS:
+	Updated the NEWS file.
+	[bcfd0754696a]
+
+	* PyQt5.msp, examples/remoteobjects/modelview/modelviewclient.py,
+	examples/remoteobjects/modelview/modelviewserver.py,
+	examples/remoteobjects/modelviewclient.py,
+	examples/remoteobjects/modelviewserver.py,
+	examples/remoteobjects/simpleswitch/directconnectdynamicclient.py:
+	The new directconnectdynamicclient.py example now works.
+	[bd087d02a6b1]
+
+	* NEWS, PyQt5.msp, examples/remoteobjects/modelviewclient.py,
+	examples/remoteobjects/modelviewserver.py:
+	Added QLoggingCategory. Added the modelviewserver.py example.
+	Implented enough of QtRemoteObjects to get the modelviewserver.py
+	example working.
+	[80c51fb955bb]
+
+2018-12-19  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp, examples/remoteobjects/modelviewclient.py,
+	lib/configure.py:
+	Implemented enough of the QtRemoteObjects module to get the
+	modelviewclient.py example working.
+	[586d4ec8eb82]
+
+2018-12-18  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/configure.py:
+	Fixed a resource leak checking for DBus.
+	[8d423b88dcf0]
+
+2018-12-15  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* NEWS:
+	Updated the NEWS file.
+	[075f600af089]
+
+	* PyQt5.msp:
+	Added the relevant CBOR classes.
+	[2e235bbf660d]
+
+	* PyQt5.msp:
+	Implemented QQmlEngine.singletonInstance().
+	[45375a4fded3]
+
+	* PyQt5.msp:
+	Ignore the QDtls and QDtlsClientVerifier classes introduced in Qt
+	v5.12.0 because they don't seem to be supported by any of the
+	platform binaries in the Qt installers.
+	[006bef3a246d]
+
+2018-12-13  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Updated QtWidgets for Qt v5.12.0.
+	[92f046e8c5c6]
+
+	* PyQt5.msp:
+	Updated QtQuick, QtQuickWidgets, QtSensors, QtSerialPort, QtSql,
+	QtSvg, QtTest, QtWebChannel, QtWebSockets, QtXml and QtXmlPatterns
+	for Qt v5.12.0.
+	[37a880df34aa]
+
+	* PyQt5.msp:
+	Updated QtOpenGL, QtPositioning, QtPrintSupport and QtQml for Qt
+	v5.12.0.
+	[26322bf5acc5]
+
+2018-12-12  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Updated QtLocation, QtMultimedia, QtMultimediaWidgets, QtNetwork,
+	QtNetworkAuth and QtNfc for Qt v5.12.0.
+	[fcba8fd3d8d0]
+
+2018-12-08  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Updated QtDBus, QtDesigner, QtGui and QtHelp for Qt v5.12.0.
+	[493f362800b2]
+
+	* PyQt5.msp, qpy/QtCore/qpycore_qhash.sip,
+	qpy/QtCore/qpycore_qvector.sip:
+	Completed the Qt v5.12.0 QtBluetooth support.
+	[8f901ebcac32]
+
+2018-12-07  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Initial Qt v5.12 support for QtBluetooth and QtCore.
+	[609022b4751d]
+
+2018-12-03  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/configure.py:
+	configure.py fix for win32-g++.
+	[7a74847749f9]
+
+2018-12-02  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* rb-product:
+	The minimum sip version is v4.19.14 which contains fixes for overlow
+	checking.
+	[52471f590b70]
+
+	* NEWS, qpy/QtCore/qpycore_post_init.cpp.in:
+	Overflow checking is now enabled by default.
+	[083e9d277c13]
+
+2018-12-01  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Fixes for QTextStream::operator<<().
+	[12c7bf9d27f0]
+
+2018-11-30  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Fixed QByteArray.number() and QByteArray.setNum().
+	[7f8138f4cad4]
+
+2018-11-24  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* qpy/QtBluetooth/qpybluetooth_quint128.sip:
+	Fixed the quint128 TypeHint annotation.
+	[0aec591095b8]
+
+2018-10-26  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp, lib/SubclassCode/QtWebEngine.versions,
+	lib/SubclassCode/QtWebEngineWidgets.versions, lib/configure.py:
+	Removed the QtWebEngine modules.
+	[93af6f0713f9]
+
+	* pyuic/uic/objcreator.py:
+	Removed the deprecated 'U' flag to open().
+	[20ea662166ae]
+
+2018-10-25  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* qpy/QtCore/qpycore_pyqtslot.h, qpy/QtCore/qpycore_types.cpp:
+	A slot in a mixin will override a slot with the same signature in a
+	super-class mixin when building a dynamic QMetaObject.
+	[6d6432ea1881]
+
+2018-10-23  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Fixed an exception message typo.
+	[6c0576316836]
+
+2018-10-03  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* Merged the 5.11-maint branch with the trunk.
+	[8b92b6d9074b]
+
+2018-10-01  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* .hgtags:
+	Added tag 5.11.3 for changeset f1e0b5e6688c
+	[77330a07214f] <5.11-maint>
+
+	* NEWS:
+	Released as v5.11.3.
+	[f1e0b5e6688c] [5.11.3] <5.11-maint>
+
+2018-09-30  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* NEWS:
+	Updated the NEWS file.
+	[231e5ffd7681] <5.11-maint>
+
+2018-09-29  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* examples/draganddrop/dropsite.py:
+	Backed out changeset e2ced9c16e81 The root cause was the bug in
+	QByteArray.__getitem__().
+	[9e7736e27ccc] <5.11-maint>
+
+	* PyQt5.msp:
+	Fixed QByteArrat.at() and __getitem__() to return a byte with Python
+	v3.
+	[8dd77fcfeebb] <5.11-maint>
+
+	* examples/draganddrop/dropsite.py:
+	Fixed a bug in dropsite.py when dropping unknown binary data.
+	[e2ced9c16e81] <5.11-maint>
+
+	* examples/opengl/grabber.py, examples/opengl/hellogl.py,
+	examples/opengl/openglwindow.py, examples/opengl/overpainting.py,
+	examples/opengl/textures/textures.py:
+	Updated the OpenGL examples to explicitly set a supported OpenGL
+	version.
+	[555ef35e97c1] <5.11-maint>
+
+	* PyQt5.msp:
+	Added support for Qt v5.11.2.
+	[8038a93084ba] <5.11-maint>
+
+2018-09-14  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Added the missing qInfo().
+	[46bbf46f79e7] <5.11-maint>
+
+2018-08-13  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* qpy/QtCore/qpycore_enums_flags.cpp:
+	Fixed a build problem with Python v2.
+	[972751e6e1a4] <5.11-maint>
+
+2018-07-31  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* qpy/QtCore/qpycore_chimera.cpp:
+	Fixed a regression in the handling of signals with 'const char *'
+	arguments.
+	[2c91b80b4e5d] <5.11-maint>
+
+2018-07-20  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* qpy/QtCore/qpycore_enums_flags.cpp:
+	Work around a build problem with Python v2.7 and later (unsupported)
+	versions of MSVC.
+	[744cc5f4c8fa] <5.11-maint>
+
+	* lib/configure.py:
+	Removed the checks for PyQt5.sip as (for a clean installation) there
+	won't be a __init__.py file.
+	[dd65db4cd291] <5.11-maint>
+
+2018-07-15  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/configure.py:
+	Fixed a regression in the handling of extension module names on
+	Windows.
+	[80b4604973e5] <5.11-maint>
+
+2018-07-14  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/configure.py:
+	Fixed the dist-info support for static builds.
+	[03b569aa406e] <5.11-maint>
+
+	* lib/configure.py:
+	Don't try to import PyQt5.sip when building a static version.
+	[802e93d1791d] <5.11-maint>
+
+2018-07-13  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Renamed QRandomGenerator.global() to global_().
+	[598e976dbe41] <5.11-maint>
+
+2018-07-11  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* qpy/QtCore/qpycore_qmetaobjectbuilder.h,
+	qpy/QtCore/qpycore_types.cpp:
+	Fixes for when building against Qt v5.8.* and v5.9.*.
+	[d61ea9439728] <5.11-maint>
+
+2018-07-04  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* designer/pluginloader.cpp, qmlscene/pluginloader.cpp:
+	Fixed the qmlscene and designer plugins to use the private copy of
+	the sip module.
+	[079b562d29c9] <5.11-maint>
+
+	* lib/configure.py:
+	Reverted the limited API version to v3.4.
+	[599442a49892] <5.11-maint>
+
+	* lib/configure.py:
+	Fixed a quoting problem when invoking mk_distinfo.py.
+	[b04abe4f35ad] <5.11-maint>
+
+	* test/tests/classes/test_QByteArray.py:
+	Added the unit test for QByteArray slicing.
+	[aab96301063b] <5.11-maint>
+
+	* lib/configure.py:
+	The mk_distinfo.py script now takes a temporary installation
+	directory as an additional argument.
+	[bd3096b5b8aa] <5.11-maint>
+
+	* lib/configure.py:
+	Fixes for invoking mk_distinfo.py with out-of-tree builds.
+	[3ca1bb19225f] <5.11-maint>
+
+2018-07-03  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* qpy/QtCore/qpycore_qvariant_value.cpp:
+	Fixed a bug detecting a failed conversion to a QVariantMap.
+	[0ebb8b9619d8] <5.11-maint>
+
+2018-06-29  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* .hgtags:
+	Added tag 5.11.2 for changeset eae29c8c2da9
+	[f9dd92207f27] <5.11-maint>
+
+	* NEWS:
+	Released as v5.11.2.
+	[eae29c8c2da9] [5.11.2] <5.11-maint>
+
+	* NEWS:
+	Updated the NEWS file.
+	[214d3a264b0e] <5.11-maint>
+
+	* NEWS, lib/configure.py:
+	Documented and checked the availability of the enum34 module.
+	[580e69901a87] <5.11-maint>
+
+	* test/tests/metaobject/test_qenum.py:
+	Fixed the enum tests for Python v2.
+	[5a5a9d928414] <5.11-maint>
+
+2018-06-26  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* qpy/QtCore/qpycore_chimera.cpp:
+	The type parser will now retry without typedefs expanded if it fails
+	with them expanded. This fixes signal argument types like
+	QVector<qreal>.
+	[e737f4c40ec9] <5.11-maint>
+
+	* PyQt5.msp:
+	Fixed the remaining broken signals.
+	[58f88366d063] <5.11-maint>
+
+2018-06-25  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* qpy/QtCore/qpycore_chimera.cpp:
+	Handle 'const' when parsing C++ types as it can occur in signal
+	arguments.
+	[4d0a42b79c8e] <5.11-maint>
+
+	* NEWS, PyQt5.msp:
+	Updated the project file format version.
+	[67a00c5666c4] <5.11-maint>
+
+	* PyQt5.msp, rb-product:
+	Replaced the /StripScope/ with the /ScopesStripped/ annotation.
+	[5e2c10455770] <5.11-maint>
+
+	* PyQt5.msp:
+	Fixed the QGraphicsBlurEffect.blurHintsChanged() signal.
+	[86710c30a455] <5.11-maint>
+
+	* NEWS, qpy/QtCore/qpycore_pyqtboundsignal.cpp,
+	qpy/QtCore/qpycore_pyqtsignal.cpp:
+	Added the signatures attribute to unbound signals.
+	[db2ecffd264c] <5.11-maint>
+
+	* PyQt5.msp:
+	Fixed the QDnsLookup.typeChanged() signal.
+	[5e524eb73a1f] <5.11-maint>
+
+2018-06-24  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Fixed QGuiApplication.applicationDisplayNameChanged().
+	[7062dc247c88] <5.11-maint>
+
+	* lib/configure.py:
+	The .dist-info directory respects $(INSTALL_ROOT).
+	[93978a369f09] <5.11-maint>
+
+2018-06-23  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* .hgtags:
+	Added tag 5.11.1 for changeset e68a890ea6b8
+	[30525c4119d4] <5.11-maint>
+
+	* NEWS:
+	Released as v5.11.1.
+	[e68a890ea6b8] [5.11.1] <5.11-maint>
+
+2018-06-22  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* .hgtags:
+	Added tag 5.11 for changeset 8f5d26af2746
+	[343a84f97ac6]
+
+	* NEWS:
+	Released as v5.11.
+	[8f5d26af2746] [5.11]
+
+2018-06-21  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* NEWS:
+	Updated the NEWS file.
+	[df06aa4d7841]
+
+	* NEWS, PyQt5.msp:
+	Updated for Qt v5.11.1.
+	[552f32ca0216]
+
+2018-06-18  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/configure.py:
+	Put the check for the private sip module in the right place.
+	[0ee45a8ed20f]
+
+2018-06-17  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/configure.py:
+	configure.py now checks for a private copy of the sip module.
+	[c431be7c36bd]
+
+	* lib/configure.py, rb-product:
+	Use a private copy of the sip module. SIP v4.19.9 is now required.
+	[7c9bae40b66c]
+
+2018-06-12  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	QWebEngineCookieScore.setFilter() should no longer leak any previous
+	filter.
+	[55cef5311fc3]
+
+	* PyQt5.msp:
+	Fixed garbage collection issues with
+	QWebEngineCookieStore.setCookieFilter() again.
+	[69f69256e752]
+
+2018-06-11  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Fixed garbage collection issues with
+	QWebEngineCookieStore.setCookieFilter().
+	[28340dc8210e]
+
+	* PyQt5.msp:
+	Updated QtWidgets for Qt v5.11.0.
+	[aeee6c28cebd]
+
+	* PyQt5.msp:
+	Fixed the building of QAbstractItemModelTester because of bugs in
+	qabstractitemmodeltester.h in Qt v5.11.0.
+	[b31a523572d9]
+
+2018-06-10  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Updated QtXml and QtXmlPatterns for Qt v5.11.0.
+	[39851da4cb5f]
+
+	* PyQt5.msp:
+	Updated QtWebChannel, QtWebEngine, QtWebEngineCore,
+	QtWebEngineWidgets and QtWebSockets for Qt v5.11.0.
+	[8b60186848da]
+
+2018-06-09  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Updated QtSensors, QtSerialPort, QtSql, QtSvg and QtTest for Qt
+	v5.11.0.
+	[1a85a313a769]
+
+	* PyQt5.msp:
+	Updated QtPositioning, QtPrintSupport, QtQml, QtQuick and
+	QtQuickWidgets for Qt v5.11.0.
+	[3343307dbde7]
+
+	* PyQt5.msp:
+	Updated QtNetwork, QtNetworkAuth, QtNfc and QtOpenGL for Qt v5.11.0.
+	[fd21e0bf4512]
+
+	* PyQt5.msp:
+	Updated QtMultimedia and QtMultimediaWidgets for Qt v5.11.0.
+	[9ba81ca7ac0a]
+
+	* qpy/QtCore/qpycore_qvariantmap.cpp,
+	qpy/QtCore/qpycore_qvariantmap.sip:
+	Added the missing QVariantMap convertors to the repo.
+	[d9e1bccb7abd]
+
+	* PyQt5.msp, qpy/QtCore/qpycore_api.h, qpy/QtCore/qpycore_chimera.cpp,
+	qpy/QtCore/qpycore_chimera.h:
+	QVariantMap is now implemented by a dedicated mapped type so that is
+	can be used as an argument to mapped type templates. Updated QtHelp
+	and QtLocation for Qt v5.11.0.
+	[b22b2c737a0c]
+
+2018-06-08  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Updated QtDBus, QtDesigner and QtGui for Qt v5.11.0.
+	[f3bbee99095b]
+
+	* PyQt5.msp:
+	Updated QtBluetooth and QtCore for Qt v5.11.0.
+	[e7804e2e16ba]
+
+2018-06-07  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Removed the internal QTest methods that have been removed in Qt
+	v5.11.0.
+	[33c3ec619c2f]
+
+	* Merged the 5.10-maint branch.
+	[53a61440fa64]
+
+2018-06-06  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* NEWS, PyQt5.msp, qpy/QtCore/qpycore_pyqtboundsignal.cpp,
+	qpy/QtCore/qpycore_pyqtslotproxy.cpp,
+	qpy/QtCore/qpycore_pyqtslotproxy.h:
+	connect() of a bound signal now returns a QMetaObject.Connection
+	object. disconnect() of a bound signal now accepts a
+	QMetaObject.Connection object.
+	[edb17999d00d] <5.10-maint>
+
+2018-06-05  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* qpy/QtCore/qpycore_qmetaobjectbuilder.h,
+	qpy/QtCore/qpycore_types.cpp:
+	Python enums are only marked as scoped in a QMetaObject in Qt v5.8.0
+	and later.
+	[1ba6f6a7f02b] <5.10-maint>
+
+	* NEWS, PyQt5.msp, qpy/QtCore/qpycore_enums_flags.cpp,
+	qpy/QtCore/qpycore_enums_flags.h,
+	qpy/QtCore/qpycore_qmetaobjectbuilder.h,
+	qpy/QtCore/qpycore_types.cpp, test/tests/metaobject/test_qenum.py:
+	Added support for Python enums to Q_ENUM() etc.
+	[3767261498bf] <5.10-maint>
+
+	* PyQt5.msp, qpy/QtCore/qpycore_api.h,
+	qpy/QtCore/qpycore_enums_flags.cpp,
+	qpy/QtCore/qpycore_enums_flags.h,
+	test/tests/metaobject/test_qenum.py:
+	Implemented Q_ENUM() and Q_FLAG().
+	[0929ceb1de64] <5.10-maint>
+
+	* test/tests/metaobject/test_qenum.py:
+	Added unit tests for Q_ENUMS and Q_FLAGS.
+	[bfea3882d8c8] <5.10-maint>
+
+2018-06-04  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/configure.py, lib/mk_distinfo.py:
+	Removed mk_distinfo.py as it is now added as part of preparation.
+	[3cbde28585b0] <5.10-maint>
+
+	* NEWS, lib/configure.py, lib/mk_distinfo.py:
+	Completed the support for the .dist-info directory.
+	[49eee7a59afe] <5.10-maint>
+
+2018-06-03  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/configure.py, lib/mk_distinfo.py:
+	Added the stub for creating the .dist-info directory.
+	[7082da319e5d] <5.10-maint>
+
+2018-05-29  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/configure.py:
+	More fixes for spaces in path names.
+	[f1c6525f5245] <5.10-maint>
+
+	* lib/configure.py:
+	Fixes for spaces in path names.
+	[b5f8125345a5] <5.10-maint>
+
+2018-05-25  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	QQuickWidget.setSource() now releases the GIL.
+	[fa1ca7902278] <5.10-maint>
+
+2018-05-02  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* .hgignore:
+	Ignore compiled QML files.
+	[88c4b4aff111] <5.10-maint>
+
+	* designer/pluginloader.cpp:
+	Make sure the GIL isn't retained by the Designer plugin.
+	[2a1461190bee] <5.10-maint>
+
+2018-04-15  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Added the explicit Qt v5.9 LTS versions to the timeline. The
+	previous approach (of adding a single high version number doesn't
+	work because sip does a string comparison on the tag and doesn't
+	interpret the embedded numbers).
+	[6105adee4a9f] <5.10-maint>
+
+2018-04-12  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* NEWS:
+	Updated the NEWS file.
+	[190602cb95d1] <5.10-maint>
+
+	* NEWS, PyQt5.msp:
+	Added the missing inputMethod() and styleHints() method to
+	QGuiApplication.
+	[79a97a665db6] <5.10-maint>
+
+2018-04-10  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* qpy/QtQuick/qpyquickframebufferobject.cpp,
+	qpy/QtQuick/qpyquickframebufferobject.h,
+	qpy/QtQuick/qpyquickitem.cpp, qpy/QtQuick/qpyquickitem.h,
+	qpy/QtQuick/qpyquickpainteditem.cpp,
+	qpy/QtQuick/qpyquickpainteditem.h, qpy/QtQuick/qpyquickview.cpp,
+	qpy/QtQuick/qpyquickview.h, qpy/QtQuick/qpyquickwindow.cpp,
+	qpy/QtQuick/qpyquickwindow.h:
+	Improved the fix for QtQuick meta-objects so that the
+	customgeometry.py example works again.
+	[7facd5e24cbb] <5.10-maint>
+
+	* examples/quick/tutorials/extending/chapter1-basics/chapter1-basics.p
+	y:
+	Improved fixes for the QtQuick tutorial chapter 1 example.
+	[2eb1ae9d235f] <5.10-maint>
+
+	* qpy/QtQuick/qpyquickframebufferobject.h, qpy/QtQuick/qpyquickitem.h,
+	qpy/QtQuick/qpyquickpainteditem.h, qpy/QtQuick/qpyquickview.h,
+	qpy/QtQuick/qpyquickwindow.h:
+	Fixed the handling of QQuickItem and similar classes so that the
+	correct meta-object is returned by metaObject().
+	[8bf883e1619f] <5.10-maint>
+
+	* examples/quick/tutorials/extending/chapter1-basics/chapter1-basics.p
+	y:
+	Fixed a warning in one of the QtQuick examples.
+	[baaefd519f7e] <5.10-maint>
+
+2018-04-09  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* qpy/pylupdate/fetchtr.cpp:
+	The pylupdate expression parser can now handle more expressions.
+	[f9c40ec61b7c] <5.10-maint>
+
+2018-04-05  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* examples/quick/models/abstractitemmodel/abstractitemmodel_rc.py,
+	examples/quick/models/objectlistmodel/objectlistmodel_rc.py,
+	examples/quick/models/stringlistmodel/stringlistmodel_rc.py:
+	Regenerated the resource files in the examples that embed .qml
+	files.
+	[e64325318426] <5.10-maint>
+
+	* qpy/pyrcc/rcc.cpp:
+	Fixed the handling of v2 format rcc files that affects embedded .qml
+	files.
+	[a5bb57d5a578] <5.10-maint>
+
+2018-03-28  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* qpy/QtCore/qpycore_qobject_helpers.cpp:
+	Fixed QObject.inherits() when applied to a Python sub-class of a C++
+	sub-class of QObject.
+	[66270559fa89] <5.10-maint>
+
+	* test/tests/classes/test_QObject.py:
+	Added the unit test for the failing QObject.inherits() when called
+	for a Python sub-class of a C++ class that is a sub-class of
+	QObject.
+	[9d6daf4a95ef] <5.10-maint>
+
+2018-03-27  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* qpy/QtCore/qpycore_pyqtsignal.cpp:
+	Signal signatures can now have a full version appended if a
+	namespace has been stripped from any argument.
+	[7815d8ce482d] <5.10-maint>
+
+2018-03-21  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* examples/quick/models/abstractitemmodel/abstractitemmodel.py,
+	examples/quick/models/objectlistmodel/objectlistmodel.py,
+	examples/quick/models/stringlistmodel/stringlistmodel.py:
+	Further fixes to the QtQuick examples that embed the QML is a
+	resource file.
+	[addc5cf26db3] <5.10-maint>
+
+2018-03-17  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Added the missing QSqlQuery.exec() overload for Python v3.
+	[6a196c11e14d] <5.10-maint>
+
+2018-03-03  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Implemented glReadPixels(). (Thanks to Jayson Kempinger.)
+	[e65865275584] <5.10-maint>
+
+2018-03-02  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/configure.py:
+	Set the limited API to v3.7.0.
+	[5ab0e4c014a6] <5.10-maint>
+
+	* PyQt5.msp:
+	Replaced calls to PySlice_GetIndicesEx() with
+	sipConvertFromSliceObject().
+	[c732d9f55a63] <5.10-maint>
+
+	* PyQt5.msp, qpy/QtQuick/qpyquick_register_type.cpp,
+	qpy/QtQuick/qpyquickview.cpp, qpy/QtQuick/qpyquickview.h,
+	qpy/QtQuick/qpyquickwindow.cpp, qpy/QtQuick/qpyquickwindow.h:
+	Handle QQuickWindow and QQuickView as special cases (cf. QQuickItem)
+	when exposing sub-classes to QML.
+	[78085eee5e7e] <5.10-maint>
+
+2018-03-01  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* examples/quick/models/abstractitemmodel/abstractitemmodel.py,
+	examples/quick/models/objectlistmodel/objectlistmodel.py,
+	examples/quick/models/stringlistmodel/stringlistmodel.py:
+	Further fixes for the QtQuick examples.
+	[5db868c90075] <5.10-maint>
+
+	* examples/quick/models/objectlistmodel/objectlistmodel.py,
+	examples/quick/models/stringlistmodel/stringlistmodel.py:
+	Fixes for a couple of the QtQuick examples.
+	[9d3b24c4012a] <5.10-maint>
+
+2018-02-27  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	The connect() and disconnect() methods of QDBusConnection now
+	release the GIL.
+	[b07ff8dc7347] <5.10-maint>
+
+	* NEWS:
+	Fixed a typo in the NEWS file.
+	[d624ede272dd] <5.10-maint>
+
+2018-02-26  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* .hgtags:
+	Added tag 5.10.1 for changeset dc149e6643d5
+	[71c3d60be239] <5.10-maint>
+
+	* NEWS:
+	Released as v5.10.1.
+	[dc149e6643d5] [5.10.1] <5.10-maint>
+
+2018-02-21  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Added the new QAbstractOAuth2 methods added in Qt v5.10.1.
+	[b2ea22e58de6] <5.10-maint>
+
+2018-02-20  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Updated for Qt v5.10.1.
+	[e27d89dd3457] <5.10-maint>
+
+2018-02-13  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Added the missing qmlClearTypeRegistrations() to the QtQml module.
+	[c9a7040cb4a7] <5.10-maint>
+
+2018-02-12  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Removed incorrect annotation on
+	QQmlNetworkAccessManagerFactory::create().
+	[6401ed81edee] <5.10-maint>
+
+2018-02-08  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* qpy/QtCore/qpycore_chimera.cpp:
+	Removed some (hopefully) redundant code.
+	[6e9e33411f41] <5.10-maint>
+
+2018-02-06  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Make sure LTS releases of Qt v5.9 don't get handled as Qt v5.10.
+	[8474d7f26f1f] <5.10-maint>
+
+2018-02-04  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/configure.py:
+	Added the --disabled-feature option to configure.py.
+	[5a554278bbf0] <5.10-maint>
+
+2018-01-31  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* examples/quick/tutorials/extending/chapter1-basics/chapter1-basics.p
+	y, examples/quick/tutorials/extending/chapter2-methods/chapter2-meth
+	ods.py, examples/quick/tutorials/extending/chapter3-bindings/chapter
+	3-bindings.py, examples/quick/tutorials/extending/chapter4-customPro
+	pertyTypes/chapter4-customPropertyTypes.py, examples/quick/tutorials
+	/extending/chapter5-listproperties/chapter5-listproperties.py:
+	Avoid an assertion failure when using a debug version of Qt.
+	[6eb406e64db8] <5.10-maint>
+
+	* qpy/QtQml/qpyqml_register_singleton_type.cpp,
+	qpy/QtQml/qpyqml_register_type.cpp:
+	Reverted the change in PyQt v5.8 that dealt with QML and properties
+	so that all the examples work again.
+	[9eb53449681d] <5.10-maint>
+
+2018-01-23  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* .hgtags:
+	Added tag 5.10 for changeset 9f68e48cf5f5
+	[c18dad0e8eec]
+
+	* NEWS:
+	Released as v5.10.
+	[9f68e48cf5f5] [5.10]
+
+	* NEWS:
+	Updated the NEWS file.
+	[0f2753f9a303]
+
+2018-01-19  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Added the %ConvertToSubClassCode for QtNetworkAuth.
+	[b9783c0386aa]
+
+	* PyQt5.msp:
+	Implemented the remaining QtNetworkAuth methods.
+	[73f3c9cc94ae]
+
+2018-01-18  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Fixes to get QtNetworkAuth to build.
+	[4d37b274bc0a]
+
+	* lib/configure.py:
+	Added support for QtNetworkAuth to configure.py.
+	[4f516477a254]
+
+	* qpy/QtCore/qpycore_qpair.sip:
+	Implemented the mapped typ etemplate for QPair<T1, T2> needed by
+	QtNetworkAuth.
+	[4657c9ea8733]
+
+2018-01-17  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Added initial support for QtNetworkAuth.
+	[ddbbb40ddf1e]
+
+	* PyQt5.msp:
+	Updated QtWidgets for Qt v5.10.0.
+	[dadfd4f1295c]
+
+	* PyQt5.msp:
+	Updated QtTest, QtWebChannel, QtWebEngine, QtWebEngineCore,
+	QtWebEngineWidgets and QtWebSockets for Qt v5.10.0.
+	[83b53f46e600]
+
+2018-01-16  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Updated QtPrintSupport, QtQml, QtQuick, QtQuickWidgets, QtSensors,
+	QtSerialPort and QtSql for Qt v5.10.0.
+	[6b6e25ea6792]
+
+	* PyQt5.msp:
+	Updated QtNetwork, QtNfc, QtOpenGL and QtPositioning for Qt v5.10.0.
+	[743896f26ce5]
+
+2018-01-10  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Updated QtLocation, QtMultimedia and QtMultimediaWidgets for Qt
+	v5.10.0.
+	[3289ec6e2f72]
+
+	* PyQt5.msp:
+	Updated QtGui for Qt v5.10.0.
+	[fcec94307c8f]
+
+	* PyQt5.msp:
+	Updated QtDBus, QtDesigner, QtHelp, QtSvg, QtXml and QtXmlPatterns
+	for Qt v5.10.0.
+	[8fad1106423b]
+
+2018-01-09  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* qpy/QtCore/qpycore_qobject_helpers.cpp:
+	Properly fixed a regression in QObject.inherits().
+	[92cbc384946a]
+
+	* PyQt5.msp:
+	Finished updating QtCore for Qt v5.10.0.
+	[3dcac7147ec6]
+
+2018-01-08  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Started to update QtCore for Qt v5.10.0.
+	[c18a11bf815d]
+
+	* PyQt5.msp:
+	Updated QtBluetooth for Qt v5.10.0.
+	[df5635ee7bf6]
+
+	* Merged the 5.9-maint branch into the trunk.
+	[e973de99d35d]
+
+2018-01-05  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* pyuic/uic/Compiler/qobjectcreator.py,
+	pyuic/uic/Loader/qobjectcreator.py, pyuic/uic/widget-
+	plugins/qtcharts.py:
+	Fixed pyuic's handling of widget implemented in a C++ namespace
+	(specifically QChartView).
+	[338e6a251aee] <5.9-maint>
+
+2017-12-20  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* pyrcc/pyrcc_main.py:
+	Fixed the handling of arguments to pyrcc5.
+	[7d9643a53c66] <5.9-maint>
+
+	* lib/configure.py:
+	Fixed out-of-tree builds.
+	[573d3b66d402] <5.9-maint>
+
+2017-12-16  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/configure.py:
+	Fixes for building in a Windows venv.
+	[1003c37c2cb5] <5.9-maint>
+
+2017-12-12  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* qpy/QtCore/qpycore_pyqtboundsignal.cpp:
+	Die more gracefully when attempting to connect to a Python method
+	with a non-ASCII name.
+	[0d30a9b8441b] <5.9-maint>
+
+2017-11-24  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* pyuic/uic/properties.py:
+	Fixed a bug in loadUi() handling gradients.
+	[0aef34d2beb2] <5.9-maint>
+
 2017-11-23  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* .hgtags:
+	Added tag 5.9.2 for changeset 7fac90c2d528
+	[02e55c83f900] <5.9-maint>
 
 	* NEWS:
 	Released as v5.9.2.

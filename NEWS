@@ -1,3 +1,74 @@
+v5.13.0 5th July 2019
+  - Added support for Qt v5.13.0.
+
+v5.12.3 26th June 2019
+  - Added support for Qt v5.12.4.
+  - Added support for Python v3.8.
+  - QCoreApplication (and sub-classes) can be used as a context manager.
+  - Added the missing WA_ContentsMarginsRespectsSafeArea enum member.
+
+v5.12.2 6th May 2019
+  - Added support for Qt v5.12.3.
+  - Added QOpenGLContext.getProcAddress().
+  - Added support for Python fstrings to pylupdate.
+
+v5.12.1 19th March 2019
+  - Added support for Qt v5.12.2.
+
+v5.12 10th February 2019
+  - Added support for Qt v5.12.0 and Qt v5.12.1.
+  - Added the QtRemoteObjects module.
+  - Added the remote objects examples.
+  - Added the missing QLoggingCategory class.
+  - The QtWebEngine, QtWebEngineCore and QtWebEngineWidgets modules have been
+    moved to a separate PyQtWebEngine package.  This is a packaging change only
+    and does not affect applications.
+  - Overflow checking when converting Python int object to C/C++ integer types
+    is now enabled by default.
+  - SIP v4.19.14 is required.
+
+v5.11.3 1st October 2018
+  - Added support for Qt v5.11.2.
+  - Added the missing qInfo().
+  - QRandomGenerator.global() is renamed to global_().
+
+v5.11.2 2nd July 2018
+  - Added the 'signatures' attribute to unbound signals.
+  - SIP v4.19.11 is required.
+
+v5.11.1 24th June 2018
+  - A pseudo-release to create a version number for updated wheels.
+
+v5.11 23rd June 2018
+  - Added support for Qt v5.11.0 and v5.11.1.
+  - Enum members are also visible as attributes of the enum in order to
+    emulate the behaviour of Python enums.  The traditional use, where a member
+    is visible at the same scope as the enum, is deprecated but will be
+    supported throughout the life of PyQt5.
+  - Versions of Python earlier than v3.4 require the enum34 package to be
+    installed from PyPI.
+  - The connect() method of a bound signal now returns a QMetaObject.Connection
+    object that can be passed to the disconnect() method.
+  - Added QtCore.Q_ENUM() and QtCore.Q_FLAG().
+  - Python enums can now be used with Q_ENUM() etc.
+  - Added the missing QGuiApplication.inputMethod() method.
+  - Added the missing QGuiApplication.styleHints() method.
+  - Added the missing QSqlQuery.exec() overload for Python v3.
+  - Added glReadPixels().
+  - A PEP 376 .dist-info directory is created on installation that provides
+    version information for dependent packages and allows pip to uninstall.
+  - Added the --no-dist-info option to configure.py.
+  - Added support for Python v3.7.
+
+v5.10.1 26th February 2018
+  - Added support for Qt v5.10.1.
+  - Added the missing qmlClearTypeRegistrations() to the QtQml module.
+  - Added the --disable-feature option to configure.py.
+
+v5.10 23rd January 2018
+  - Added support for Qt v5.10.0.
+  - Added the QtNetworkAuth module.
+
 v5.9.2 23rd November 2017
   - Added support for Qt v5.9.3.
   - Added the QtAndroidExtras module.
