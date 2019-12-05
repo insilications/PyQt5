@@ -4,7 +4,7 @@
 #
 Name     : PyQt5
 Version  : 5.13.0
-Release  : 19
+Release  : 20
 URL      : https://www.riverbankcomputing.com/static/Downloads/PyQt5/5.13.0/PyQt5_gpl-5.13.0.tar.gz
 Source0  : https://www.riverbankcomputing.com/static/Downloads/PyQt5/5.13.0/PyQt5_gpl-5.13.0.tar.gz
 Summary  : No detailed summary available
