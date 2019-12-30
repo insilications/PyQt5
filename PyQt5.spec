@@ -4,7 +4,7 @@
 #
 Name     : PyQt5
 Version  : 5.13.0
-Release  : 20
+Release  : 21
 URL      : https://www.riverbankcomputing.com/static/Downloads/PyQt5/5.13.0/PyQt5_gpl-5.13.0.tar.gz
 Source0  : https://www.riverbankcomputing.com/static/Downloads/PyQt5/5.13.0/PyQt5_gpl-5.13.0.tar.gz
 Summary  : No detailed summary available
@@ -109,6 +109,7 @@ python3 components for the PyQt5 package.
 
 %prep
 %setup -q -n PyQt5_gpl-5.13.0
+cd %{_builddir}/PyQt5_gpl-5.13.0
 %patch1 -p1
 
 %build
@@ -116,7 +117,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1565819924
+export SOURCE_DATE_EPOCH=1577734326
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$CFLAGS -fno-lto "
@@ -126,11 +127,14 @@ export CXXFLAGS="$CXXFLAGS -fno-lto "
 make  %{?_smp_mflags}
 
 %install
-export SOURCE_DATE_EPOCH=1565819924
+export SOURCE_DATE_EPOCH=1577734326
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/PyQt5
-cp LICENSE %{buildroot}/usr/share/package-licenses/PyQt5/LICENSE
+cp %{_builddir}/PyQt5_gpl-5.13.0/LICENSE %{buildroot}/usr/share/package-licenses/PyQt5/8624bcdae55baeef00cd11d5dfcfa60f68710a02
 %make_install
+## install_append content
+find %{buildroot} -name '*.so' -exec chmod -v 755 {} \;
+## install_append end
 
 %files
 %defattr(-,root,root,-)
@@ -934,7 +938,7 @@ cp LICENSE %{buildroot}/usr/share/package-licenses/PyQt5/LICENSE
 
 %files license
 %defattr(0644,root,root,0755)
-/usr/share/package-licenses/PyQt5/LICENSE
+/usr/share/package-licenses/PyQt5/8624bcdae55baeef00cd11d5dfcfa60f68710a02
 
 %files python
 %defattr(-,root,root,-)
