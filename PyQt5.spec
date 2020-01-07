@@ -113,7 +113,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1578408253
+export SOURCE_DATE_EPOCH=1578420047
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$CFLAGS -fno-lto "
@@ -123,13 +123,13 @@ export CXXFLAGS="$CXXFLAGS -fno-lto "
 make  %{?_smp_mflags}
 
 %install
-export SOURCE_DATE_EPOCH=1578408253
+export SOURCE_DATE_EPOCH=1578420047
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/PyQt5
 cp %{_builddir}/PyQt5-5.14.1.dev1912311030/LICENSE %{buildroot}/usr/share/package-licenses/PyQt5/8624bcdae55baeef00cd11d5dfcfa60f68710a02
 %make_install
 ## install_append content
-find %{buildroot} -name '*.so' -exec chmod -v 755 {} \;
+find %{buildroot} -name '*.so' -print0 | xargs -rt0 chmod 755 --
 ## install_append end
 
 %files
