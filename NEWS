@@ -1,3 +1,23 @@
+v5.14.1 ??? January 2020
+  - This is a bug fix release.
+
+v5.14.0 18th December 2019
+  - Added support for Qt v5.14.0.
+
+v5.13.2 3rd November 2019
+  - Added the missing pos() and setPos() overloads to QCursor.
+  - A QVariant for a pointer to an unknown type will now be converted to a SIP
+    voidptr.
+  - Added support for QKeySequenceEdit to pyuic5.
+  - Added support for SIP v5.
+
+v5.13.1 14th September 2019
+  - Added the (temporary) pyqt5_enable_new_onexit_scheme() to allow
+    experimentation with the new on-exit clean-up scheme.
+  - Added the missing QObject.disconnect(QMetaObject.Connection) overload.
+  - Deprecated PYQT_CONFIGURATION.
+  - SIP v4.19.19 is required.
+
 v5.13.0 5th July 2019
   - Added support for Qt v5.13.0.
 

@@ -1,4 +1,563 @@
+2019-12-31  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* NEWS:
+	Updated the NEWS file.
+	[07df2e7706a8] [tip] <5.14-maint>
+
+2019-12-22  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	QThread.run() now releases the GIL.
+	[11d237de6d73] <5.14-maint>
+
+2019-12-20  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/pyproject.toml:
+	Fixed 'requires' in pyproject.toml.
+	[2a2cb22e6c11] <5.14-maint>
+
+2019-12-17  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* .hgtags:
+	Added tag 5.14.0 for changeset ddf73b461beb
+	[96f0bf5fb354]
+
+	* NEWS:
+	Released as v5.14.0.
+	[ddf73b461beb] [5.14.0]
+
+	* PyQt5.msp:
+	Implemented QColorConstants.
+	[fdb00424303d]
+
+2019-12-16  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* NEWS:
+	Updated the NEWS file.
+	[b43235d6d719]
+
+	* lib/project.py:
+	Don't check that the user can write to the directory where a plugin
+	will be installed because they might have different permissions when
+	that is actually done.
+	[e8f16629a54e]
+
+	* lib/pyproject.toml:
+	Require PyQt-builder v1.1 for a bug fix affecting the dbus module.
+	[efc9cf987547]
+
+	* PyQt5.msp, qpy/QtCore/qpycore_init.cpp,
+	qpy/QtCore/qpycore_onexit.sip, qpy/QtCore/qpycore_public_api.cpp,
+	qpy/QtCore/qpycore_public_api.h:
+	Removed pyqt5_enable_new_onexit_scheme() and made the new scheme the
+	default.
+	[f8b71afd02a5]
+
+2019-12-15  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Completed the implementation of undocumented QCalendar-related
+	methods.
+	[ace88f6d228b]
+
+	* PyQt5.msp:
+	Completed the implementation of QCalendar.
+	[5984363fccad]
+
+	* PyQt5.msp:
+	Implemented the missing QCalendar ctor.
+	[f9931f445257]
+
+	* PyQt5.msp:
+	Added support for QRecursiveMutex.
+	[43614cd9a889]
+
+2019-12-14  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Updated QtWidgets for Qr v5.14.0.
+	[6ed3119f8822]
+
+2019-12-13  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Updated QtQml, QtQuick, QtQuickWidgets, QtRemoteObjects, QtSensors,
+	QtSerialPort, QtSql, QtSvg, QtTest, QtWebChannel, QtWebSockets,
+	QtXml and QtXmlPatterns for Qt v5.14.0.
+	[0f9c3f164789]
+
+	* PyQt5.msp:
+	Updated QtNetwork, QtNetworkAuth, QtNfc, QtOpenGL, QtPositioning and
+	QtPrintSupport for Qt v5.14.0.
+	[ea10989ad81e]
+
+	* PyQt5.msp:
+	Updated QtHelp, QtLocation, QtMultimedia and QtMultimediaWidgets for
+	Qt v5.14.0.
+	[b0ac383abf51]
+
+	* PyQt5.msp:
+	Updated QtGui for Qt v5.14.0.
+	[bd7ac1a672e3]
+
+	* lib/pyproject.toml, rb-product:
+	SIP v4.19.20 or v5.0.1 are now required.
+	[310e5b1b1cc3]
+
+	* PyQt5.msp:
+	Updated QtDBus and QtDesigner for Qt v5.14.0.
+	[ed74cb384bcc]
+
+	* PyQt5.msp:
+	Completed the majority of QtCore updates for Qt v5.14.0.
+	[341ea44f7c40]
+
+2019-12-12  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Updated QtBluetooth for Qt v5.14.0.
+	[3d879dd3da75]
+
+	* Merged the 5.13-maint branch.
+	[acdf5a9b8653]
+
+2019-11-02  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* .hgtags:
+	Added tag 5.13.2 for changeset ed56ea659bb0
+	[7e8b5fe8dc3e] <5.13-maint>
+
+	* NEWS:
+	Released as v5.13.2.
+	[ed56ea659bb0] [5.13.2] <5.13-maint>
+
+	* NEWS:
+	Updated the NEWS file.
+	[b65ab87137e7] <5.13-maint>
+
+2019-10-25  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* pyuic/uic/Loader/loader.py, pyuic/uic/uiparser.py:
+	Fixed the loading of resources by pyuic when parsing prior to
+	compiling.
+	[8ab7188957f9] <5.13-maint>
+
+2019-10-12  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* qpy/QtCore/qpycore_chimera.cpp:
+	A QVariant for a pointer to an instance of unknown type will now be
+	converted to a voidptr object.
+	[aa92cdba8bd5] <5.13-maint>
+
+2019-10-04  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/configure.py:
+	configure.py always uses mk_distinfo.py.
+	[75ce243e09f3] <5.13-maint>
+
+	* lib/configure.py:
+	Fixed building with configure.py and sip v5.
+	[81b0347831c8] <5.13-maint>
+
+2019-10-03  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/pyproject.toml:
+	Fixed the name of PEP 566.
+	[e61052653a78] <5.13-maint>
+
+	* lib/pyproject.toml:
+	Requires PyQt-builder v1.
+	[13354d23b0ff] <5.13-maint>
+
+2019-10-01  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/pyproject.toml:
+	Fixed the name of the PyQt-builder project.
+	[448c6595e115] <5.13-maint>
+
+2019-09-30  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/configure.py:
+	Updated to use sip-module rather than sip-header.
+	[53e1e1452030] <5.13-maint>
+
+2019-09-27  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/project.py:
+	Changes for the latest sip v5 API changes.
+	[f0081cfe3b2b] <5.13-maint>
+
+2019-09-26  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/configure.py:
+	sip5-header is now sip-header.
+	[f83c9fe3199f] <5.13-maint>
+
+2019-09-22  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Added the missing pos() and two setPos() overloads to QCursor.
+	[72b09c3d761d] <5.13-maint>
+
+	* lib/project.py:
+	More fixes for sip v5 API changes.
+	[8a159d5c82cf] <5.13-maint>
+
+	* lib/project.py:
+	Further changes driven by sip v5 API changes.
+	[732d4bb56f4d] <5.13-maint>
+
+2019-09-21  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/project.py, lib/pyproject.toml:
+	Changes for the latest sip v5 API.
+	[bb7c877b83e6] <5.13-maint>
+
+2019-09-18  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* qpy/QtCore/qpycore_public_api.cpp:
+	The new on-exit scheme now ignores running QThreads.
+	[3cc975356440] <5.13-maint>
+
+2019-09-13  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* pyuic/uic/Compiler/qtproxies.py:
+	pyuic now handles QKeySequenceEdit.
+	[3d4ad156100c] <5.13-maint>
+
+2019-09-07  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* .hgtags:
+	Added tag 5.13.1 for changeset 3b8a68bbc4bc
+	[b8f8dfe1a7ca] <5.13-maint>
+
+	* NEWS:
+	Released as v5.13.1.
+	[3b8a68bbc4bc] [5.13.1] <5.13-maint>
+
+	* NEWS, PyQt5.msp, qpy/QtCore/qpycore_init.cpp,
+	qpy/QtCore/qpycore_onexit.sip, qpy/QtCore/qpycore_public_api.cpp,
+	qpy/QtCore/qpycore_public_api.h:
+	Implemented pyqt5_enable_new_onexit_scheme().
+	[285d5e8d4ae8] <5.13-maint>
+
+	* PyQt5.msp:
+	Fixed the broken fixes for the QFileDialog methods.
+	[610a86453f9e] <5.13-maint>
+
+	* NEWS:
+	Updated the NEWS file.
+	[a829bcd14ffe] <5.13-maint>
+
+	* lib/pyproject.toml:
+	Temporarily specify PyQt-build v0.1 as the build system.
+	[58ab66c206ce] <5.13-maint>
+
+2019-09-05  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Fixed the type of the directory argument to the getOpenFileUrl(),
+	getOpenFileUrls() and getSaveFileUrl() methods of QFileDialog.
+	[fdd9e3fa43e6] <5.13-maint>
+
+2019-09-03  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/project.py:
+	Project.version is now Project.version_str.
+	[59f8a480dedf] <5.13-maint>
+
+2019-08-29  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* METADATA.in, lib/README, lib/pyproject.toml:
+	Updated the meta-data.
+	[7e71d204ca71] <5.13-maint>
+
+	* lib/configure.py:
+	No longer pass -B to sip as it is not currently used and won't be in
+	the future (as there is no plan to allow PyQt5 to be built against
+	Qt6).
+	[fd3fc5a1e303] <5.13-maint>
+
+	* lib/project.py, lib/pyproject.toml:
+	Refactored the use of apply_defaults(). The sip module no longer has
+	to be specified.
+	[3c4173b0d75f] <5.13-maint>
+
+	* lib/project.py:
+	Set the new bindings factories.
+	[47d0f553c501] <5.13-maint>
+
+	* lib/project.py, lib/pyproject.toml:
+	The Qt module no longer needs special handling. Changed the section
+	containing the meta-data.
+	[63a6a48e6770] <5.13-maint>
+
+2019-08-28  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/project.py:
+	Refactored now that PyQtBindingsMetadata is gone.
+	[16de36f846ec] <5.13-maint>
+
+2019-08-27  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/project.py:
+	Fixed the test for QAxContainer.
+	[916b8b913924] <5.13-maint>
+
+2019-08-26  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/project.py, lib/pyproject.toml:
+	Updated the sip v5 support for the API name changes.
+	[4c0f8a7f88fd] <5.13-maint>
+
+2019-08-24  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/project.py:
+	Fixed all issues with the remaining bindings.
+	[f37e9ef838a3] <5.13-maint>
+
+	* lib/project.py:
+	Implemented the remaining bindings.
+	[1e2ef76a47ce] <5.13-maint>
+
+	* lib/project.py:
+	Don't assume the Qt module is to be built.
+	[bc247bedc415] <5.13-maint>
+
+	* lib/project.py:
+	Console scipts are now specified as a configuration option.
+	[1e4a1788f309] <5.13-maint>
+
+2019-08-23  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/project.py:
+	Fixed the composite module for Windows.
+	[611298e3bc77] <5.13-maint>
+
+	* lib/project.py:
+	Fixes for the dbus module.
+	[3148de68558f] <5.13-maint>
+
+	* lib/project.py:
+	Buildable related changes.
+	[bd807a9fa3c1] <5.13-maint>
+
+	* lib/project.py:
+	Fixes for building the dbus module.
+	[d6293ad4dc63] <5.13-maint>
+
+2019-08-22  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/project.py:
+	Added support for the dbus module (untested).
+	[07c0d55d212f] <5.13-maint>
+
+	* lib/project.py:
+	Tweaked an error message.
+	[50c748462641] <5.13-maint>
+
+	* lib/project.py:
+	Disable the plugins if the user doesn't have write permission on the
+	target directory.
+	[e67441bfc327] <5.13-maint>
+
+	* lib/project.py:
+	The plugins now get written to .dist-info (even though pip will not
+	remove them).
+	[21f584b4216a] <5.13-maint>
+
+2019-08-21  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/project.py:
+	Added the QtNetwork and QtQml bindings.
+	[8d01741428f0] <5.13-maint>
+
+	* lib/project.py:
+	Added the QtGui, QtWidgets and QtDesigner bindings.
+	[4fad5b30c128] <5.13-maint>
+
+	* lib/configure.py:
+	Fixed the handling of the output of test programs.
+	[dd545829885d] <5.13-maint>
+
+	* lib/project.py:
+	Don't build the plugins when building a wheel.
+	[928a6392fa3c] <5.13-maint>
+
+	* lib/project.py:
+	Added the Designer and qmlscene plugins (untested).
+	[5d20e4548775] <5.13-maint>
+
+	* qpy/QtCore/qpycore_qt_conf.cpp:
+	Fixed building with a Qt namespace defined.
+	[2b38bc74866c] <5.13-maint>
+
+2019-08-20  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/project.py:
+	Added the console scripts.
+	[cb2e037d6d79] <5.13-maint>
+
+	* lib/project.py:
+	Mark the Qt module as internal.
+	[4d52a067ce6a] <5.13-maint>
+
+	* lib/project.py:
+	Added the pylupdate and pyrcc modules.
+	[70ffa53c1c91] <5.13-maint>
+
+	* lib/project.py:
+	The composite Qt module is now installed.
+	[2ccc57847870] <5.13-maint>
+
+	* lib/project.py:
+	The uic module is no installed.
+	[32ee729ed3a5] <5.13-maint>
+
+	* lib/project.py:
+	Added support for the (deprecated) PYQT_CONFIGURATION.
+	[98b19464eea8] <5.13-maint>
+
+	* lib/project.py:
+	Added support for __init__.py.
+	[ca97101a3212] <5.13-maint>
+
+2019-08-19  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/project.py:
+	project.py fixes.
+	[3ce196e5fb8d] <5.13-maint>
+
+2019-08-16  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/project.py:
+	Replace calls to information() by calls to progress().
+	[3f6488f3bd12] <5.13-maint>
+
+2019-08-13  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/configure.py:
+	The Windows search for the Qt DLLs no longer raises an exception in
+	case the application has already taken steps which it doesn't know
+	about.
+	[04d7981c0826] <5.13-maint>
+
+2019-08-12  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/configure.py:
+	On Windows the directory containing sys.executable is also searched
+	for the QtCore DLL.
+	[9fe8c15ff93e] <5.13-maint>
+
+2019-08-10  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Ensure that connectSlotsByName() doesn't leave a (benign) Python
+	exception lying around.
+	[214cce9442c9] <5.13-maint>
+
+2019-08-05  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* pyuic/uic/__init__.py:
+	Fixed the support for custom widgets when using loadUiType().
+	[24c37fd0e8c1] <5.13-maint>
+
+2019-07-30  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* qpy/QtCore/qpycore_event_handlers.cpp,
+	qpy/QtCore/qpycore_event_handlers.h,
+	qpy/QtCore/qpycore_public_api.cpp:
+	Further tweaks to the QObject monitoring.
+	[a5562b4e4149] <5.13-maint>
+
+2019-07-29  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* qpy/QtCore/qpycore_event_handlers.cpp,
+	qpy/QtCore/qpycore_public_api.cpp:
+	Some tweaks to the QObject monitoring.
+	[60ba3d9a5c07] <5.13-maint>
+
+	* qpy/QtCore/qpycore_event_handlers.cpp:
+	Fixed a silly build bug.
+	[edc4c50ea2ce] <5.13-maint>
+
+2019-07-28  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/project.py:
+	Implemented the handling of the QtCore configuration tests.
+	[26289542aacd] <5.13-maint>
+
+	* qpy/QtCore/qpycore_event_handlers.cpp,
+	qpy/QtCore/qpycore_event_handlers.h,
+	qpy/QtCore/qpycore_public_api.cpp:
+	Disable the QObject monitoring when shutting down.
+	[4be58ad217b5] <5.13-maint>
+
+2019-07-24  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/project.py:
+	Added the QtCore bindings meta-data.
+	[685feae56e24] <5.13-maint>
+
+2019-07-22  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/project.py:
+	project.py now treats the license.py file as a data file.
+	[d10befd49da0] <5.13-maint>
+
+	* lib/project.py, lib/pyproject.toml:
+	Implemented the license checking in project.py.
+	[77e0f0342bd3] <5.13-maint>
+
+2019-07-21  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp, lib/project.py, qpy/QtCore/qpycore_init.cpp,
+	qpy/QtCore/qpycore_public_api.cpp, qpy/QtCore/qpycore_public_api.h,
+	rb-product:
+	All Python owned QObject instances are now destroyed before the
+	QCoreApplication instance.
+	[2f419c7ebaae] <5.13-maint>
+
+2019-07-20  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp, lib/configure.py:
+	Add support for the PyQt_WebChannel feature needed by PyQtWebEngine.
+	[5e8c7d1796c5] <5.13-maint>
+
+2019-07-19  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/project.py, lib/pyproject.toml:
+	Added the stubs of the new build system.
+	[5da52a42d076] <5.13-maint>
+
+2019-07-17  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/configure.py:
+	Use sip5-distinfo if available.
+	[4361f5386d85] <5.13-maint>
+
+	* PyQt5.msp:
+	Added the missing QObject.disconnect(QMetaObject.Connection).
+	[aef036220269] <5.13-maint>
+
+2019-07-12  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Removed some (now redundant) Python v2 code in the QString
+	convertor.
+	[80b0bf28af84] <5.13-maint>
+
+2019-07-11  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp, qpy/QtCore/qpycore_qstring.cpp:
+	Fixed the conversion of Unicode objects with Python v2.
+	[81b34c9373b6] <5.13-maint>
+
 2019-07-04  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* .hgtags:
+	Added tag 5.13.0 for changeset 1592be9a7612
+	[93850ecc1e96]
 
 	* NEWS:
 	Released as v5.13.0.
