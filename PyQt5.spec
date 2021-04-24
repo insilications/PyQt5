@@ -4,7 +4,7 @@
 #
 Name     : PyQt5
 Version  : 5.14.1.dev1912311030
-Release  : 30
+Release  : 31
 URL      : https://www.riverbankcomputing.com/static/Downloads/PyQt5/PyQt5-5.14.1.dev1912311030.tar.gz
 Source0  : https://www.riverbankcomputing.com/static/Downloads/PyQt5/PyQt5-5.14.1.dev1912311030.tar.gz
 Summary  : No detailed summary available
