@@ -1,8 +1,491 @@
+2021-03-05  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* NEWS:
+	Released as v5.15.4.
+	[b30547186181] [5.15.4] <5.15-maint>
+
+	* qpy/QtCore/qpycore_qt_conf.cpp:
+	Fixed the embedded conf file.
+	[28d8448d1ec4] <5.15-maint>
+
+2021-03-04  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/configure.py, lib/project.py:
+	Fixed the Qt subdirectory in __init__.py.
+	[1cd001d504ab] <5.15-maint>
+
+2021-03-02  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* NEWS:
+	Updated the NEWS file.
+	[755c706e32ba] <5.15-maint>
+
+2021-02-27  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/pyproject.toml:
+	Fixed the project dependencies.
+	[f945ce38080e] <5.15-maint>
+
+	* rb-product, rb-product.toml:
+	Updated the product file.
+	[fc2239114623] <5.15-maint>
+
+2021-02-22  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* .hgtags:
+	Added tag 5.15.3 for changeset 301db948366e
+	[a7dde6d9b36d] <5.15-maint>
+
+	* NEWS:
+	Released as v5.15.3.
+	[301db948366e] [5.15.3] <5.15-maint>
+
+	* NEWS:
+	Updated the NEWS file.
+	[266673bae2b4] <5.15-maint>
+
+2021-02-15  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Fixed a number of potential deadlocks in QSettings and
+	QLibraryInfo.location().
+	[7384c3dd7be6] <5.15-maint>
+
+2021-02-09  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/pyproject.toml:
+	Added the dependency on the Qt wheel.
+	[0ae0210a3702] <5.15-maint>
+
+	* PyQt5.msp, lib/configure.py, lib/project.py:
+	Removed QtNetworkAuth.
+	[8242660fe0f2] <5.15-maint>
+
+2021-01-28  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* pylupdate/pylupdate_main.py, pylupdate/pylupdatemod.sip:
+	Fixed pylupdate's handling of filenames with non-Latin1 characters.
+	[cd771b985dd5] <5.15-maint>
+
+2021-01-03  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Fixed a type hint typo.
+	[8269fa810791] <5.15-maint>
+
+	* PyQt5.msp:
+	Some type hint fixes.
+	[b956e87c177f] <5.15-maint>
+
+2020-12-24  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp, QAxContainer/qaxbase.sip:
+	Removed some forgotten uses of SIP_SSIZE_T.
+	[728d87aa1c8e] <5.15-maint>
+
+2020-12-14  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* qpy/QtCore/qpycore_api.h, qpy/QtCore/qpycore_init.cpp,
+	qpy/QtCore/qpycore_public_api.cpp:
+	Don't call the QCoreApplication dtor if we didn't call the ctor.
+	[e4dc97f92847] <5.15-maint>
+
+2020-12-07  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Added the missing QImage.setAlphaChannel().
+	[b642690ef798] <5.15-maint>
+
+2020-11-23  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* .hgtags:
+	Added tag 5.15.2 for changeset ddf234c8c683
+	[2f116d2cb5da] <5.15-maint>
+
+	* NEWS:
+	Released as v5.12.2.
+	[ddf234c8c683] [5.15.2] <5.15-maint>
+
+	* NEWS:
+	Updated the NEWS file.
+	[a4088498ec1a] <5.15-maint>
+
+2020-11-13  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* qpy/QtCore/qpycore_pyqtsignal.cpp, qpy/QtCore/qpycore_pyqtslot.cpp:
+	Eliminated a couple of Python deprecation warnings.
+	[a868cf5559cb] <5.15-maint>
+
+2020-10-30  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Fixed some typos in the OpenGL bindings.
+	[d824696aef6b] <5.15-maint>
+
+2020-10-28  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Updated to project v15.
+	[6cc6247a25e1] <5.15-maint>
+
+2020-10-04  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* designer/pluginloader.cpp, qmlscene/pluginloader.cpp:
+	Eliminate deprecation warnings from Python v3.9.
+	[ba17824001af] <5.15-maint>
+
+	* PyQt5.msp:
+	Ensure that QtQuick will build without OpenGL.
+	[9625e73814d4] <5.15-maint>
+
+2020-09-28  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Added a missing /TransferBack/ annotation to QLayout.removeWidget().
+	[230f954c1920] <5.15-maint>
+
+2020-09-27  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* qpy/QtCore/qpycore_pyqtboundsignal.cpp:
+	Fixed hashable signals for unsupported versions of Python.
+	[32f6a9018722] <5.15-maint>
+
+2020-09-24  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Fixed QActionGroup.ExclusionPolicy.None and
+	QOcspRevocationReason.None.
+	[cdcf3488537b] <5.15-maint>
+
+2020-09-18  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/project.py:
+	Check the version of Qt is supported.
+	[50527038fe31] <5.15-maint>
+
+2020-09-17  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/project.py, lib/pyproject.toml:
+	Require PyQt-builder v1.6 as we no longer specify the sip module and
+	ABI.
+	[0f86b0b9bb21] <5.15-maint>
+
+	* PyQt5.msp:
+	Added the QT_MAC_WANTS_LAYER workaround for lost paint events.
+	[183a91751895] <5.15-maint>
+
+	* PyQt5.msp, lib/SubclassCode/QtMultimedia.versions:
+	Fixed building against Qt v5.10 and earlier.
+	[29e2ebf17db3] <5.15-maint>
+
+2020-09-14  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* NEWS, qpy/QtCore/qpycore_pyqtboundsignal.cpp:
+	Bound signals are now hashable.
+	[4318b62d0575] <5.15-maint>
+
+2020-09-11  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* .hgtags:
+	Added tag 5.15.1 for changeset f99d8e2299f1
+	[2e783d474267] <5.15-maint>
+
+	* NEWS:
+	Released as v5.15.1.
+	[f99d8e2299f1] [5.15.1] <5.15-maint>
+
+	* NEWS:
+	Updated the NEWS file.
+	[51b9d0e4a153] <5.15-maint>
+
+	* PyQt5.msp:
+	Fixed bugs related to QSGNode.
+	[a8a92e00511e] <5.15-maint>
+
+2020-08-27  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp, config-tests/cfgtest_QtCore.cpp:
+	Fixed building with compilers without constexpr support (ie. MSVC
+	2015).
+	[ae7bb0399061] <5.15-maint>
+
+2020-08-22  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/project.py:
+	Set the name of the sip module explicitly.
+	[16811c7f937c] <5.15-maint>
+
+2020-08-08  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* qpy/QtCore/qpycore_pyqtboundsignal.cpp:
+	Fix a signal disconnect() when None is passed as the argument.
+	[22794b6d6a6c] <5.15-maint>
+
+2020-07-11  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* NEWS, qpy/QtCore/qpycore_pyqtboundsignal.cpp:
+	Bound signals can now be tested for equality.
+	[2651d9efa223] <5.15-maint>
+
+	* NEWS, qpy/QtCore/qpycore_classinfo.cpp,
+	qpy/QtCore/qpycore_enums_flags.cpp:
+	Raise an appropriate exception if Q_CLASSINFO, Q_ENUM, Q_ENUMS,
+	Q_FLAG or Q_FLAGS are used on PyPy.
+	[1d22af022477] <5.15-maint>
+
+2020-06-16  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* NEWS, PyQt5.msp, lib/configure.py, lib/project.py:
+	Added the QtTextToSpeech module.
+	[d31c28251af2] <5.15-maint>
+
+2020-06-10  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* NEWS, PyQt5.msp, qpy/QtCore/qpycore_qjsonvalue.cpp:
+	None is now interpreted as a null QJsonValue.
+	[1b4fdf6609d4] <5.15-maint>
+
+2020-06-01  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/project.py:
+	Fixed the platform tag for macOS wheels.
+	[72fd5bbd2388] <5.15-maint>
+
+2020-05-30  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* .hgtags:
+	Added tag 5.15.0 for changeset 5e7e90d17d36
+	[720e8a99e5df]
+
+	* NEWS:
+	Released as v5.15.0.
+	[5e7e90d17d36] [5.15.0]
+
+	* PyQt5.msp:
+	Added a missing private copy ctor.
+	[16609177df03]
+
+2020-05-29  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* NEWS:
+	Updated the NEWS file.
+	[ca51bd410062]
+
+	* PyQt5.msp, lib/configure.py, lib/project.py:
+	Added the QtQuick3D module.
+	[089b9c6b4c44]
+
+2020-05-28  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Updated QtWebSockets, QtWidgets and QtXml for Qt v5.15.0.
+	[fe6404101c22]
+
+	* PyQt5.msp:
+	Updated QtQuick, QtRemoteObjects and QtSvg for Qt v5.15.0.
+	[fecc60c0fbb4]
+
+2020-05-27  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp, lib/SubclassCode/QtQml.versions,
+	qpy/QtCore/qpycore_qvector.sip:
+	Updated QtMultimedia, QtMultimediaWidgets, QtNetwork and QtQml for
+	Qt v5.15.0.
+	[404a2ac8e061]
+
+	* PyQt5.msp, lib/SubclassCode/QtHelp.versions:
+	Updated QtGui and QtHelp for Qt v5.15.0.
+	[2b69e249eb5e]
+
+	* PyQt5.msp:
+	Updated QtCore for Qt v5.15.0.
+	[0f9c5a2e60af]
+
+2020-05-18  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* QtAndroidExtras/qandroidjniobject.sip:
+	Fixes for the new callStaticMethod() overload.
+	[aab21130b519]
+
+	* NEWS, QtAndroidExtras/qandroidjniobject.sip:
+	Implemented the QAndroidJniObject.callStaticMethod() overload that
+	takes and returns a QJsonDocument.
+	[58a54fbe938b]
+
+2020-05-16  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Initial pass of Qt v5.15.0.
+	[5457742900e7]
+
+	* Merged the 5.14-maint branch.
+	[304e165b67aa]
+
+2020-05-09  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/pyproject.toml:
+	SIP v5.3 is now a minimum requirement.
+	[c88d94dfb85b] <5.14-maint>
+
+	* lib/pyproject.toml:
+	SIP v6 can be used as we don't use anything that will be removed.
+	[55ba9e69364a] <5.14-maint>
+
+	* lib/project.py:
+	Fix the ABI version of the sip module in anticipation of newer,
+	incompatible, versions.
+	[425fdef06f34] <5.14-maint>
+
+2020-05-07  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/__init__.py:
+	Added support for PyQt5 sub-packages (possibly the PyQt5.sip module)
+	that are built with setuptools rather than a modern pip.
+	[ddea00aec29a] <5.14-maint>
+
+	* PyQt5.msp:
+	Fixed memory leaks in the __getitem__ method of QPolygon, QPolygonF
+	and QXmlStreamAttributes.
+	[90e14744b854] <5.14-maint>
+
+2020-05-05  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Fixed QSGTexture.Filter.None.
+	[cfc9d0148a10] <5.14-maint>
+
+	* pyuic/uic/__init__.py:
+	Strengthened the warning at the top of .py files created by pyuic.
+	[00e1e859c348] <5.14-maint>
+
+2020-04-26  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Automatically convert QGradient to a sub-class if possible.
+	[dd812681dcc8] <5.14-maint>
+
+2020-04-22  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/pyproject.toml, rb-product:
+	Require a version of SIP with the race condition fix.
+	[2007cb6e7314] <5.14-maint>
+
+	* qpy/QtCore/qpycore_qobject_helpers.cpp:
+	Properly fixed the race condition. SIP v5.2.1 or later is also
+	required.
+	[9e9a0e6241e6] <5.14-maint>
+
+	* pyuic/uic/Compiler/qtproxies.py:
+	Added support for QUndoView to pyuic5.
+	[8cf7aa5ec0a2] <5.14-maint>
+
+2020-04-21  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Added the remaining QtMultimedia control classes.
+	[4089144a11e5] <5.14-maint>
+
+	* PyQt5.msp:
+	Added the remaining camera related control classes.
+	[b3848dbdaf58] <5.14-maint>
+
+	* PyQt5.msp, lib/SubclassCode/QtMultimedia.versions:
+	Implemented the first batch of QMultimedia control classes.
+	[294ec48d7628] <5.14-maint>
+
+	* PyQt5.msp:
+	Added QVideoWidgetControl to QtMultimediaWidgets.
+	[786636ae8eec] <5.14-maint>
+
+2020-04-20  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Added QtMutimedia.QMediaStreamsControl to see if it is useful.
+	[c7ca36894f1a] <5.14-maint>
+
+2020-04-18  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* qpy/QtCore/qpycore_qobject_helpers.cpp:
+	Remove a potential race condition in qpycore_qobject_qt_metacall().
+	[897d3b6fd4c2] <5.14-maint>
+
+2020-04-08  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/project.py:
+	Build debug versions of the Designer and QML plugins and the DBus
+	module if any of the bindings modules ar ebeing built as debug
+	versions.
+	[46144794a070] <5.14-maint>
+
+2020-04-02  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* .hgtags:
+	Added tag 5.14.2 for changeset f6efe33af484
+	[5feed10b3fc9] <5.14-maint>
+
+	* NEWS:
+	Released as v5.14.2.
+	[f6efe33af484] [5.14.2] <5.14-maint>
+
+	* NEWS:
+	Updated the NEWS file.
+	[73d621910b73] <5.14-maint>
+
+	* PyQt5.msp:
+	Added the missing QTextCodec.convertFromUnicode() so that QTextCodec
+	can now be instantiated from Python.
+	[71aabcec4eb4] <5.14-maint>
+
+2020-03-15  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* qpy/QtCore/qjsonarray.sip, qpy/QtCore/qpycore_qjsonvalue.cpp:
+	Fixed a regression introduced when QJsonValue became iterable.
+	[b03590b430ce] <5.14-maint>
+
+2020-02-08  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* lib/pyproject.toml:
+	Fixed METADATA for the commercial wheels.
+	[5da20453cf42] <5.14-maint>
+
+2020-02-05  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Fixed glReadPixels() in the ES2 support.
+	[c104737f6f05] <5.14-maint>
+
+2020-02-04  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Enabled the OpenGL ES bindings.
+	[d15fbceb7632] <5.14-maint>
+
+2020-01-19  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* PyQt5.msp:
+	Implement QFlags.__index__() to replicate the behaviour of Python's
+	enum.IntFlag type and avoid a deprecation warning in Python v3.8.
+	[541f2dcf2b27] <5.14-maint>
+
+	* .hgignore:
+	Ignore the new distribution directories.
+	[ca61cf227382] <5.14-maint>
+
+2020-01-05  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* .hgtags:
+	Added tag 5.14.1 for changeset 71a24375c1af
+	[9807854bd906] <5.14-maint>
+
+	* NEWS:
+	Released as v5.14.1.
+	[71a24375c1af] [5.14.1] <5.14-maint>
+
 2019-12-31  Phil Thompson  <phil@riverbankcomputing.com>
 
 	* NEWS:
 	Updated the NEWS file.
-	[07df2e7706a8] [tip] <5.14-maint>
+	[07df2e7706a8] <5.14-maint>
 
 2019-12-22  Phil Thompson  <phil@riverbankcomputing.com>
 
@@ -10854,570 +11337,3 @@
 	examples/dialogs/classwizard/classwizard_rc2.py,
 	examples/dialogs/classwizard/classwizard_rc3.py,
 	examples/dialogs/classwizard/images/background.png,
-	examples/dialogs/classwizard/images/banner.png,
-	examples/dialogs/classwizard/images/logo1.png,
-	examples/dialogs/classwizard/images/logo2.png,
-	examples/dialogs/classwizard/images/logo3.png,
-	examples/dialogs/classwizard/images/watermark1.png,
-	examples/dialogs/classwizard/images/watermark2.png,
-	examples/dialogs/configdialog/configdialog.py,
-	examples/dialogs/configdialog/configdialog.qrc,
-	examples/dialogs/configdialog/configdialog_rc2.py,
-	examples/dialogs/configdialog/configdialog_rc3.py,
-	examples/dialogs/configdialog/images/config.png,
-	examples/dialogs/configdialog/images/query.png,
-	examples/dialogs/configdialog/images/update.png,
-	examples/dialogs/extension.py, examples/dialogs/findfiles.py,
-	examples/dialogs/standarddialogs.py, examples/dialogs/tabdialog.py,
-	examples/dialogs/trivialwizard.py, examples/draganddrop/README,
-	examples/draganddrop/delayedencoding/delayedencoding.py,
-	examples/draganddrop/delayedencoding/delayedencoding.qrc,
-	examples/draganddrop/delayedencoding/delayedencoding_rc2.py,
-	examples/draganddrop/delayedencoding/delayedencoding_rc3.py,
-	examples/draganddrop/delayedencoding/images/drag.png,
-	examples/draganddrop/delayedencoding/images/example.svg,
-	examples/draganddrop/draggableicons/draggableicons.py,
-	examples/draganddrop/draggableicons/draggableicons.qrc,
-	examples/draganddrop/draggableicons/draggableicons_rc2.py,
-	examples/draganddrop/draggableicons/draggableicons_rc3.py,
-	examples/draganddrop/draggableicons/images/boat.png,
-	examples/draganddrop/draggableicons/images/car.png,
-	examples/draganddrop/draggableicons/images/house.png,
-	examples/draganddrop/draggabletext/draggabletext.py,
-	examples/draganddrop/draggabletext/draggabletext.qrc,
-	examples/draganddrop/draggabletext/draggabletext_rc2.py,
-	examples/draganddrop/draggabletext/draggabletext_rc3.py,
-	examples/draganddrop/draggabletext/words.txt,
-	examples/draganddrop/dropsite.py,
-	examples/draganddrop/fridgemagnets/fridgemagnets.py,
-	examples/draganddrop/fridgemagnets/fridgemagnets.qrc,
-	examples/draganddrop/fridgemagnets/fridgemagnets_rc2.py,
-	examples/draganddrop/fridgemagnets/fridgemagnets_rc3.py,
-	examples/draganddrop/fridgemagnets/words.txt,
-	examples/draganddrop/puzzle/example.jpg,
-	examples/draganddrop/puzzle/puzzle.py,
-	examples/draganddrop/puzzle/puzzle.qrc,
-	examples/draganddrop/puzzle/puzzle_rc2.py,
-	examples/draganddrop/puzzle/puzzle_rc3.py, examples/effects/README,
-	examples/effects/lighting.py, examples/graphicsview/README,
-	examples/graphicsview/anchorlayout.py,
-	examples/graphicsview/collidingmice/collidingmice.py,
-	examples/graphicsview/collidingmice/images/cheese.jpg,
-	examples/graphicsview/collidingmice/mice.qrc,
-	examples/graphicsview/collidingmice/mice_rc2.py,
-	examples/graphicsview/collidingmice/mice_rc3.py,
-	examples/graphicsview/diagramscene/diagramscene.py,
-	examples/graphicsview/diagramscene/diagramscene.qrc,
-	examples/graphicsview/diagramscene/diagramscene_rc2.py,
-	examples/graphicsview/diagramscene/diagramscene_rc3.py,
-	examples/graphicsview/diagramscene/images/background1.png,
-	examples/graphicsview/diagramscene/images/background2.png,
-	examples/graphicsview/diagramscene/images/background3.png,
-	examples/graphicsview/diagramscene/images/background4.png,
-	examples/graphicsview/diagramscene/images/bold.png,
-	examples/graphicsview/diagramscene/images/bringtofront.png,
-	examples/graphicsview/diagramscene/images/delete.png,
-	examples/graphicsview/diagramscene/images/floodfill.png,
-	examples/graphicsview/diagramscene/images/italic.png,
-	examples/graphicsview/diagramscene/images/linecolor.png,
-	examples/graphicsview/diagramscene/images/linepointer.png,
-	examples/graphicsview/diagramscene/images/pointer.png,
-	examples/graphicsview/diagramscene/images/sendtoback.png,
-	examples/graphicsview/diagramscene/images/textpointer.png,
-	examples/graphicsview/diagramscene/images/underline.png,
-	examples/graphicsview/dragdroprobot/dragdroprobot.py,
-	examples/graphicsview/dragdroprobot/dragdroprobot.qrc,
-	examples/graphicsview/dragdroprobot/dragdroprobot_rc2.py,
-	examples/graphicsview/dragdroprobot/dragdroprobot_rc3.py,
-	examples/graphicsview/dragdroprobot/images/head.png,
-	examples/graphicsview/elasticnodes.py,
-	examples/graphicsview/padnavigator/backside.ui,
-	examples/graphicsview/padnavigator/images/artsfftscope.png,
-	examples/graphicsview/padnavigator/images/blue_angle_swirl.jpg,
-	examples/graphicsview/padnavigator/images/kontact_contacts.png,
-	examples/graphicsview/padnavigator/images/kontact_journal.png,
-	examples/graphicsview/padnavigator/images/kontact_mail.png,
-	examples/graphicsview/padnavigator/images/kontact_notes.png,
-	examples/graphicsview/padnavigator/images/kopeteavailable.png,
-	examples/graphicsview/padnavigator/images/metacontact_online.png,
-	examples/graphicsview/padnavigator/images/minitools.png,
-	examples/graphicsview/padnavigator/padnavigator.py,
-	examples/graphicsview/padnavigator/padnavigator.qrc,
-	examples/graphicsview/padnavigator/padnavigator_rc2.py,
-	examples/graphicsview/padnavigator/padnavigator_rc3.py,
-	examples/graphicsview/padnavigator/ui_backside.py,
-	examples/ipc/README, examples/ipc/localfortuneclient.py,
-	examples/ipc/localfortuneserver.py,
-	examples/ipc/sharedmemory/dialog.py,
-	examples/ipc/sharedmemory/dialog.ui,
-	examples/ipc/sharedmemory/image.png,
-	examples/ipc/sharedmemory/qt.png,
-	examples/ipc/sharedmemory/sharedmemory.py,
-	examples/itemviews/README,
-	examples/itemviews/basicsortfiltermodel.py,
-	examples/itemviews/chart/chart.py,
-	examples/itemviews/chart/chart.qrc,
-	examples/itemviews/chart/chart_rc2.py,
-	examples/itemviews/chart/chart_rc3.py,
-	examples/itemviews/chart/mydata.cht,
-	examples/itemviews/chart/qtdata.cht,
-	examples/itemviews/coloreditorfactory.py,
-	examples/itemviews/combowidgetmapper.py,
-	examples/itemviews/customsortfiltermodel.py,
-	examples/itemviews/dirview.py,
-	examples/itemviews/editabletreemodel/default.txt,
-	examples/itemviews/editabletreemodel/editabletreemodel.py,
-	examples/itemviews/editabletreemodel/editabletreemodel.qrc,
-	examples/itemviews/editabletreemodel/editabletreemodel_rc2.py,
-	examples/itemviews/editabletreemodel/editabletreemodel_rc3.py,
-	examples/itemviews/editabletreemodel/mainwindow.ui,
-	examples/itemviews/editabletreemodel/ui_mainwindow.py,
-	examples/itemviews/fetchmore.py,
-	examples/itemviews/pixelator/images/qt.png,
-	examples/itemviews/pixelator/pixelator.py,
-	examples/itemviews/pixelator/pixelator.qrc,
-	examples/itemviews/pixelator/pixelator_rc2.py,
-	examples/itemviews/pixelator/pixelator_rc3.py,
-	examples/itemviews/puzzle/example.jpg,
-	examples/itemviews/puzzle/puzzle.py,
-	examples/itemviews/puzzle/puzzle.qrc,
-	examples/itemviews/puzzle/puzzle_rc2.py,
-	examples/itemviews/puzzle/puzzle_rc3.py,
-	examples/itemviews/simpledommodel.py,
-	examples/itemviews/simpletreemodel/default.txt,
-	examples/itemviews/simpletreemodel/simpletreemodel.py,
-	examples/itemviews/simpletreemodel/simpletreemodel.qrc,
-	examples/itemviews/simpletreemodel/simpletreemodel_rc2.py,
-	examples/itemviews/simpletreemodel/simpletreemodel_rc3.py,
-	examples/itemviews/simplewidgetmapper.py,
-	examples/itemviews/spinboxdelegate.py,
-	examples/itemviews/stardelegate.py, examples/layouts/README,
-	examples/layouts/basiclayouts.py, examples/layouts/borderlayout.py,
-	examples/layouts/flowlayout.py, examples/mainwindows/README,
-	examples/mainwindows/application/application.py,
-	examples/mainwindows/application/application.qrc,
-	examples/mainwindows/application/application_rc2.py,
-	examples/mainwindows/application/application_rc3.py,
-	examples/mainwindows/application/images/copy.png,
-	examples/mainwindows/application/images/cut.png,
-	examples/mainwindows/application/images/new.png,
-	examples/mainwindows/application/images/open.png,
-	examples/mainwindows/application/images/paste.png,
-	examples/mainwindows/application/images/save.png,
-	examples/mainwindows/dockwidgets/dockwidgets.py,
-	examples/mainwindows/dockwidgets/dockwidgets.qrc,
-	examples/mainwindows/dockwidgets/dockwidgets_rc2.py,
-	examples/mainwindows/dockwidgets/dockwidgets_rc3.py,
-	examples/mainwindows/dockwidgets/images/new.png,
-	examples/mainwindows/dockwidgets/images/print.png,
-	examples/mainwindows/dockwidgets/images/save.png,
-	examples/mainwindows/dockwidgets/images/undo.png,
-	examples/mainwindows/mdi/images/copy.png,
-	examples/mainwindows/mdi/images/cut.png,
-	examples/mainwindows/mdi/images/new.png,
-	examples/mainwindows/mdi/images/open.png,
-	examples/mainwindows/mdi/images/paste.png,
-	examples/mainwindows/mdi/images/save.png,
-	examples/mainwindows/mdi/mdi.py, examples/mainwindows/mdi/mdi.qrc,
-	examples/mainwindows/mdi/mdi_rc2.py,
-	examples/mainwindows/mdi/mdi_rc3.py, examples/mainwindows/menus.py,
-	examples/mainwindows/recentfiles.py,
-	examples/mainwindows/sdi/images/copy.png,
-	examples/mainwindows/sdi/images/cut.png,
-	examples/mainwindows/sdi/images/new.png,
-	examples/mainwindows/sdi/images/open.png,
-	examples/mainwindows/sdi/images/paste.png,
-	examples/mainwindows/sdi/images/save.png,
-	examples/mainwindows/sdi/sdi.py, examples/mainwindows/sdi/sdi.qrc,
-	examples/mainwindows/sdi/sdi_rc2.py,
-	examples/mainwindows/sdi/sdi_rc3.py,
-	examples/mainwindows/separations.py, examples/network/README,
-	examples/network/blockingfortuneclient.py,
-	examples/network/broadcastreceiver.py,
-	examples/network/broadcastsender.py,
-	examples/network/fortuneclient.py,
-	examples/network/fortuneserver.py, examples/network/ftp/ftp.py,
-	examples/network/ftp/ftp.qrc, examples/network/ftp/ftp_rc2.py,
-	examples/network/ftp/ftp_rc3.py,
-	examples/network/ftp/images/cdtoparent.png,
-	examples/network/ftp/images/dir.png,
-	examples/network/ftp/images/file.png,
-	examples/network/http/authenticationdialog.ui,
-	examples/network/http/http.py, examples/network/loopback.py,
-	examples/network/threadedfortuneserver.py,
-	examples/opengl/2dpainting.py, examples/opengl/README,
-	examples/opengl/grabber.py, examples/opengl/hellogl.py,
-	examples/opengl/overpainting.py, examples/opengl/samplebuffers.py,
-	examples/opengl/textures/images/side1.png,
-	examples/opengl/textures/images/side2.png,
-	examples/opengl/textures/images/side3.png,
-	examples/opengl/textures/images/side4.png,
-	examples/opengl/textures/images/side5.png,
-	examples/opengl/textures/images/side6.png,
-	examples/opengl/textures/textures.py,
-	examples/opengl/textures/textures.qrc,
-	examples/opengl/textures/textures_rc2.py,
-	examples/opengl/textures/textures_rc3.py, examples/painting/README,
-	examples/painting/basicdrawing/basicdrawing.py,
-	examples/painting/basicdrawing/basicdrawing.qrc,
-	examples/painting/basicdrawing/basicdrawing_rc2.py,
-	examples/painting/basicdrawing/basicdrawing_rc3.py,
-	examples/painting/basicdrawing/images/brick.png,
-	examples/painting/basicdrawing/images/qt-logo.png,
-	examples/painting/concentriccircles.py,
-	examples/painting/painterpaths.py,
-	examples/painting/svgviewer/files/bubbles.svg,
-	examples/painting/svgviewer/files/cubic.svg,
-	examples/painting/svgviewer/files/spheres.svg,
-	examples/painting/svgviewer/svgviewer.py,
-	examples/painting/svgviewer/svgviewer.qrc,
-	examples/painting/svgviewer/svgviewer_rc2.py,
-	examples/painting/svgviewer/svgviewer_rc3.py,
-	examples/painting/transformations.py, examples/phonon/README,
-	examples/phonon/capabilities.py, examples/phonon/musicplayer.py,
-	examples/pyuic/compile-on-the-fly.py, examples/pyuic/demo.ui,
-	examples/pyuic/load_ui1.py, examples/pyuic/load_ui2.py,
-	examples/richtext/README, examples/richtext/calendar.py,
-	examples/richtext/orderform.py,
-	examples/richtext/syntaxhighlighter.py,
-	examples/richtext/textobject/files/heart.svg,
-	examples/richtext/textobject/textobject.py, examples/script/README,
-	examples/script/helloscript.py, examples/sql/README,
-	examples/sql/cachedtable.py, examples/sql/connection.py,
-	examples/sql/querymodel.py, examples/sql/relationaltablemodel.py,
-	examples/sql/tablemodel.py, examples/threads/README,
-	examples/threads/mandelbrot.py, examples/threads/semaphores.py,
-	examples/threads/waitconditions.py, examples/tools/README,
-	examples/tools/codecs/codecs.py,
-	examples/tools/codecs/encodedfiles/iso-8859-1.txt,
-	examples/tools/codecs/encodedfiles/iso-8859-15.txt,
-	examples/tools/codecs/encodedfiles/utf-16.txt,
-	examples/tools/codecs/encodedfiles/utf-16be.txt,
-	examples/tools/codecs/encodedfiles/utf-16le.txt,
-	examples/tools/codecs/encodedfiles/utf-8.txt,
-	examples/tools/customcompleter/customcompleter.py,
-	examples/tools/customcompleter/customcompleter.qrc,
-	examples/tools/customcompleter/customcompleter_rc2.py,
-	examples/tools/customcompleter/customcompleter_rc3.py,
-	examples/tools/customcompleter/resources/wordlist.txt,
-	examples/tools/i18n/i18n.py, examples/tools/i18n/i18n.qrc,
-	examples/tools/i18n/i18n_rc2.py, examples/tools/i18n/i18n_rc3.py,
-	examples/tools/i18n/translations/i18n_ar.qm,
-	examples/tools/i18n/translations/i18n_ar.ts,
-	examples/tools/i18n/translations/i18n_cs.qm,
-	examples/tools/i18n/translations/i18n_cs.ts,
-	examples/tools/i18n/translations/i18n_de.qm,
-	examples/tools/i18n/translations/i18n_de.ts,
-	examples/tools/i18n/translations/i18n_el.qm,
-	examples/tools/i18n/translations/i18n_el.ts,
-	examples/tools/i18n/translations/i18n_en.qm,
-	examples/tools/i18n/translations/i18n_en.ts,
-	examples/tools/i18n/translations/i18n_eo.qm,
-	examples/tools/i18n/translations/i18n_eo.ts,
-	examples/tools/i18n/translations/i18n_fr.qm,
-	examples/tools/i18n/translations/i18n_fr.ts,
-	examples/tools/i18n/translations/i18n_it.qm,
-	examples/tools/i18n/translations/i18n_it.ts,
-	examples/tools/i18n/translations/i18n_jp.qm,
-	examples/tools/i18n/translations/i18n_jp.ts,
-	examples/tools/i18n/translations/i18n_ko.qm,
-	examples/tools/i18n/translations/i18n_ko.ts,
-	examples/tools/i18n/translations/i18n_no.qm,
-	examples/tools/i18n/translations/i18n_no.ts,
-	examples/tools/i18n/translations/i18n_pt.qm,
-	examples/tools/i18n/translations/i18n_pt.ts,
-	examples/tools/i18n/translations/i18n_ru.qm,
-	examples/tools/i18n/translations/i18n_ru.ts,
-	examples/tools/i18n/translations/i18n_sv.qm,
-	examples/tools/i18n/translations/i18n_sv.ts,
-	examples/tools/i18n/translations/i18n_zh.qm,
-	examples/tools/i18n/translations/i18n_zh.ts,
-	examples/tools/regexp.py,
-	examples/tools/settingseditor/inifiles/licensepage.ini,
-	examples/tools/settingseditor/inifiles/qsa.ini,
-	examples/tools/settingseditor/settingseditor.py,
-	examples/tutorials/addressbook/README,
-	examples/tutorials/addressbook/part1.py,
-	examples/tutorials/addressbook/part2.py,
-	examples/tutorials/addressbook/part3.py,
-	examples/tutorials/addressbook/part4.py,
-	examples/tutorials/addressbook/part5.py,
-	examples/tutorials/addressbook/part6.py,
-	examples/tutorials/addressbook/part7.py,
-	examples/webkit/domtraversal/domtraversal.py,
-	examples/webkit/domtraversal/ui_window.py,
-	examples/webkit/domtraversal/window.ui,
-	examples/webkit/fancybrowser/fancybrowser.py,
-	examples/webkit/fancybrowser/jquery.min.js,
-	examples/webkit/fancybrowser/jquery.qrc,
-	examples/webkit/fancybrowser/jquery_rc2.py,
-	examples/webkit/fancybrowser/jquery_rc3.py,
-	examples/webkit/formextractor/form.html,
-	examples/webkit/formextractor/formextractor.py,
-	examples/webkit/formextractor/formextractor.qrc,
-	examples/webkit/formextractor/formextractor.ui,
-	examples/webkit/formextractor/formextractor_rc2.py,
-	examples/webkit/formextractor/formextractor_rc3.py,
-	examples/webkit/formextractor/ui_formextractor.py,
-	examples/webkit/framecapture.py, examples/webkit/googlechat/form.ui,
-	examples/webkit/googlechat/googlechat.py,
-	examples/webkit/googlechat/ui_form.py,
-	examples/webkit/previewer/previewer.py,
-	examples/webkit/previewer/previewer.ui,
-	examples/webkit/previewer/ui_previewer.py,
-	examples/webkit/simpleselector/simpleselector.py,
-	examples/webkit/simpleselector/ui_window.py,
-	examples/webkit/simpleselector/window.ui, examples/widgets/README,
-	examples/widgets/analogclock.py, examples/widgets/calculator.py,
-	examples/widgets/calendarwidget.py,
-	examples/widgets/charactermap.py, examples/widgets/digitalclock.py,
-	examples/widgets/groupbox.py, examples/widgets/icons/icons.py,
-	examples/widgets/icons/images/designer.png,
-	examples/widgets/icons/images/find_disabled.png,
-	examples/widgets/icons/images/find_normal.png,
-	examples/widgets/icons/images/monkey_off_128x128.png,
-	examples/widgets/icons/images/monkey_off_16x16.png,
-	examples/widgets/icons/images/monkey_off_32x32.png,
-	examples/widgets/icons/images/monkey_off_64x64.png,
-	examples/widgets/icons/images/monkey_on_128x128.png,
-	examples/widgets/icons/images/monkey_on_16x16.png,
-	examples/widgets/icons/images/monkey_on_32x32.png,
-	examples/widgets/icons/images/monkey_on_64x64.png,
-	examples/widgets/icons/images/qt_extended_16x16.png,
-	examples/widgets/icons/images/qt_extended_32x32.png,
-	examples/widgets/icons/images/qt_extended_48x48.png,
-	examples/widgets/imageviewer.py, examples/widgets/lineedits.py,
-	examples/widgets/movie/animation.mng,
-	examples/widgets/movie/movie.py, examples/widgets/scribble.py,
-	examples/widgets/shapedclock.py, examples/widgets/sliders.py,
-	examples/widgets/spinboxes.py, examples/widgets/styles.py,
-	examples/widgets/stylesheet/images/checkbox_checked.png,
-	examples/widgets/stylesheet/images/checkbox_checked_hover.png,
-	examples/widgets/stylesheet/images/checkbox_checked_pressed.png,
-	examples/widgets/stylesheet/images/checkbox_unchecked.png,
-	examples/widgets/stylesheet/images/checkbox_unchecked_hover.png,
-	examples/widgets/stylesheet/images/checkbox_unchecked_pressed.png,
-	examples/widgets/stylesheet/images/down_arrow.png,
-	examples/widgets/stylesheet/images/down_arrow_disabled.png,
-	examples/widgets/stylesheet/images/frame.png,
-	examples/widgets/stylesheet/images/pagefold.png,
-	examples/widgets/stylesheet/images/pushbutton.png,
-	examples/widgets/stylesheet/images/pushbutton_hover.png,
-	examples/widgets/stylesheet/images/pushbutton_pressed.png,
-	examples/widgets/stylesheet/images/radiobutton_checked.png,
-	examples/widgets/stylesheet/images/radiobutton_checked_hover.png,
-	examples/widgets/stylesheet/images/radiobutton_checked_pressed.png,
-	examples/widgets/stylesheet/images/radiobutton_unchecked.png,
-	examples/widgets/stylesheet/images/radiobutton_unchecked_hover.png,
-	e
-	xamples/widgets/stylesheet/images/radiobutton_unchecked_pressed.png,
-	examples/widgets/stylesheet/images/sizegrip.png,
-	examples/widgets/stylesheet/images/spindown.png,
-	examples/widgets/stylesheet/images/spindown_hover.png,
-	examples/widgets/stylesheet/images/spindown_off.png,
-	examples/widgets/stylesheet/images/spindown_pressed.png,
-	examples/widgets/stylesheet/images/spinup.png,
-	examples/widgets/stylesheet/images/spinup_hover.png,
-	examples/widgets/stylesheet/images/spinup_off.png,
-	examples/widgets/stylesheet/images/spinup_pressed.png,
-	examples/widgets/stylesheet/images/up_arrow.png,
-	examples/widgets/stylesheet/images/up_arrow_disabled.png,
-	examples/widgets/stylesheet/mainwindow.ui,
-	examples/widgets/stylesheet/qss/coffee.qss,
-	examples/widgets/stylesheet/qss/default.qss,
-	examples/widgets/stylesheet/qss/pagefold.qss,
-	examples/widgets/stylesheet/stylesheet.py,
-	examples/widgets/stylesheet/stylesheet.qrc,
-	examples/widgets/stylesheet/stylesheet_rc2.py,
-	examples/widgets/stylesheet/stylesheet_rc3.py,
-	examples/widgets/stylesheet/stylesheeteditor.py,
-	examples/widgets/stylesheet/stylesheeteditor.ui,
-	examples/widgets/stylesheet/ui_mainwindow.py,
-	examples/widgets/stylesheet/ui_stylesheeteditor.py,
-	examples/widgets/tetrix.py,
-	examples/widgets/tooltips/images/circle.png,
-	examples/widgets/tooltips/images/square.png,
-	examples/widgets/tooltips/images/triangle.png,
-	examples/widgets/tooltips/tooltips.py,
-	examples/widgets/tooltips/tooltips.qrc,
-	examples/widgets/tooltips/tooltips_rc2.py,
-	examples/widgets/tooltips/tooltips_rc3.py,
-	examples/widgets/wiggly.py, examples/widgets/windowflags.py,
-	examples/xml/README, examples/xml/dombookmarks/dombookmarks.py,
-	examples/xml/dombookmarks/frank.xbel,
-	examples/xml/dombookmarks/jennifer.xbel,
-	examples/xml/saxbookmarks/frank.xbel,
-	examples/xml/saxbookmarks/jennifer.xbel,
-	examples/xml/saxbookmarks/saxbookmarks.py,
-	examples/xmlpatterns/README,
-	examples/xmlpatterns/schema/files/contact.xsd,
-	examples/xmlpatterns/schema/files/invalid_contact.xml,
-	examples/xmlpatterns/schema/files/invalid_order.xml,
-	examples/xmlpatterns/schema/files/invalid_recipe.xml,
-	examples/xmlpatterns/schema/files/order.xsd,
-	examples/xmlpatterns/schema/files/recipe.xsd,
-	examples/xmlpatterns/schema/files/valid_contact.xml,
-	examples/xmlpatterns/schema/files/valid_order.xml,
-	examples/xmlpatterns/schema/files/valid_recipe.xml,
-	examples/xmlpatterns/schema/schema.py,
-	examples/xmlpatterns/schema/schema.qrc,
-	examples/xmlpatterns/schema/schema.ui,
-	examples/xmlpatterns/schema/schema_rc2.py,
-	examples/xmlpatterns/schema/schema_rc3.py,
-	examples/xmlpatterns/schema/ui_schema.py, installers/AddToPath.nsh,
-	installers/BuildGPL.txt, installers/PyQt5-Qt5-gpl.nsi,
-	installers/StrSlash.nsh, installers/mysql-config.bat, installers
-	/psql-config.bat, installers/pyqt-check.py, installers/pyqt-
-	config.bat, installers/qsci-config.bat, installers/qt5-config.bat,
-	installers/sip-config.bat, lib/LICENSE.commercial,
-	lib/LICENSE.commercial.short, lib/LICENSE.gpl,
-	lib/LICENSE.gpl.short, lib/LICENSE.internal,
-	lib/QMetaObjectFormats.txt, lib/README,
-	lib/SubclassCode/QtGuiQt4.versions,
-	lib/SubclassCode/QtNetwork.versions, lib/SubclassCode/mksccode.py,
-	lib/UpdatingArgumentNames.txt, lib/__init__.py, lib/configure.py,
-	lib/license.py.commercial, lib/license.py.internal, lib/pyqt-
-	gpl.sip, lib/pyqt-internal.sip, pylupdate/fetchtr.cpp,
-	pylupdate/main.cpp, pylupdate/merge.cpp,
-	pylupdate/metatranslator.cpp, pylupdate/metatranslator.h,
-	pylupdate/numberh.cpp, pylupdate/proparser.cpp,
-	pylupdate/proparser.h, pylupdate/sametexth.cpp,
-	pylupdate/simtexth.cpp, pylupdate/simtexth.h,
-	pylupdate/translator.cpp, pylupdate/translator.h, pyrcc/main.cpp,
-	pyrcc/rcc.cpp, pyrcc/rcc.h, pyuic/uic/Compiler/__init__.py,
-	pyuic/uic/Compiler/compiler.py, pyuic/uic/Compiler/indenter.py,
-	pyuic/uic/Compiler/misc.py, pyuic/uic/Compiler/proxy_metaclass.py,
-	pyuic/uic/Compiler/qobjectcreator.py,
-	pyuic/uic/Compiler/qtproxies.py, pyuic/uic/Loader/__init__.py,
-	pyuic/uic/Loader/loader.py, pyuic/uic/Loader/qobjectcreator.py,
-	pyuic/uic/__init__.py, pyuic/uic/driver.py, pyuic/uic/exceptions.py,
-	pyuic/uic/icon_cache.py, pyuic/uic/objcreator.py,
-	pyuic/uic/port_v2/__init__.py, pyuic/uic/port_v2/as_string.py,
-	pyuic/uic/port_v2/ascii_upper.py, pyuic/uic/port_v2/invoke.py,
-	pyuic/uic/port_v2/load_plugin.py, pyuic/uic/port_v2/proxy_base.py,
-	pyuic/uic/port_v2/string_io.py, pyuic/uic/port_v3/__init__.py,
-	pyuic/uic/port_v3/as_string.py, pyuic/uic/port_v3/ascii_upper.py,
-	pyuic/uic/port_v3/invoke.py, pyuic/uic/port_v3/load_plugin.py,
-	pyuic/uic/port_v3/proxy_base.py, pyuic/uic/port_v3/string_io.py,
-	pyuic/uic/properties.py, pyuic/uic/pyuic.py, pyuic/uic/uiparser.py,
-	pyuic/uic/widget-plugins/phonon.py, pyuic/uic/widget-
-	plugins/qaxcontainer.py, pyuic/uic/widget-plugins/qscintilla.py,
-	pyuic/uic/widget-plugins/qtdeclarative.py, pyuic/uic/widget-
-	plugins/qtwebkit.py, qpy/QtCore/qpycore.pro,
-	qpy/QtCore/qpycore_api.h, qpy/QtCore/qpycore_chimera.cpp,
-	qpy/QtCore/qpycore_chimera.h,
-	qpy/QtCore/qpycore_chimera_signature.cpp,
-	qpy/QtCore/qpycore_chimera_storage.cpp,
-	qpy/QtCore/qpycore_classinfo.cpp, qpy/QtCore/qpycore_classinfo.h,
-	qpy/QtCore/qpycore_init.cpp, qpy/QtCore/qpycore_misc.cpp,
-	qpy/QtCore/qpycore_misc.h, qpy/QtCore/qpycore_namespace.h,
-	qpy/QtCore/qpycore_post_init.cpp.in,
-	qpy/QtCore/qpycore_pyqtboundsignal.cpp,
-	qpy/QtCore/qpycore_pyqtboundsignal.h,
-	qpy/QtCore/qpycore_pyqtconfigure.cpp,
-	qpy/QtCore/qpycore_pyqtmethodproxy.cpp,
-	qpy/QtCore/qpycore_pyqtmethodproxy.h,
-	qpy/QtCore/qpycore_pyqtproperty.cpp,
-	qpy/QtCore/qpycore_pyqtproperty.h, qpy/QtCore/qpycore_pyqtproxy.cpp,
-	qpy/QtCore/qpycore_pyqtproxy.h, qpy/QtCore/qpycore_pyqtpyobject.cpp,
-	qpy/QtCore/qpycore_pyqtpyobject.h,
-	qpy/QtCore/qpycore_pyqtsignal.cpp, qpy/QtCore/qpycore_pyqtsignal.h,
-	qpy/QtCore/qpycore_pyqtslot.cpp,
-	qpy/QtCore/qpycore_qabstracteventdispatcher.cpp,
-	qpy/QtCore/qpycore_qmetaobject.cpp,
-	qpy/QtCore/qpycore_qmetaobject_helpers.cpp,
-	qpy/QtCore/qpycore_qmetaobjectbuilder.h,
-	qpy/QtCore/qpycore_qobject_getattr.cpp,
-	qpy/QtCore/qpycore_qobject_helpers.cpp,
-	qpy/QtCore/qpycore_qobject_helpers.h,
-	qpy/QtCore/qpycore_qpynullvariant.cpp,
-	qpy/QtCore/qpycore_qpynullvariant.h, qpy/QtCore/qpycore_qstring.cpp,
-	qpy/QtCore/qpycore_qstringlist.cpp, qpy/QtCore/qpycore_qvariant.cpp,
-	qpy/QtCore/qpycore_qvariant_value.cpp, qpy/QtCore/qpycore_shared.h,
-	qpy/QtCore/qpycore_sip.h, qpy/QtCore/qpycore_sip_helpers.cpp,
-	qpy/QtCore/qpycore_sip_helpers.h, qpy/QtCore/qpycore_types.cpp,
-	qpy/QtCore/qpycore_types.h, qpy/QtCore/qpynullvariant.sip,
-	qpy/QtCore/qwineventnotifier.sip, qpy/QtDBus/qpydbus.pro,
-	qpy/QtDBus/qpydbus_api.h, qpy/QtDBus/qpydbus_chimera_helpers.cpp,
-	qpy/QtDBus/qpydbus_chimera_helpers.h,
-	qpy/QtDBus/qpydbus_post_init.cpp,
-	qpy/QtDBus/qpydbuspendingreply.cpp,
-	qpy/QtDBus/qpydbuspendingreply.h,
-	qpy/QtDBus/qpydbuspendingreply.sip, qpy/QtDBus/qpydbusreply.cpp,
-	qpy/QtDBus/qpydbusreply.h, qpy/QtDBus/qpydbusreply.sip,
-	qpy/QtDeclarative/qpydeclarative.pro,
-	qpy/QtDeclarative/qpydeclarative_api.h,
-	qpy/QtDeclarative/qpydeclarative_chimera_helpers.cpp,
-	qpy/QtDeclarative/qpydeclarative_chimera_helpers.h,
-	qpy/QtDeclarative/qpydeclarative_listwrapper.cpp,
-	qpy/QtDeclarative/qpydeclarative_listwrapper.h,
-	qpy/QtDeclarative/qpydeclarative_post_init.cpp,
-	qpy/QtDeclarative/qpydeclarativelistproperty.cpp,
-	qpy/QtDeclarative/qpydeclarativelistproperty.h,
-	qpy/QtDeclarative/qpydeclarativelistproperty.sip,
-	qpy/QtDeclarative/qpydeclarativepropertyvaluesource.h,
-	qpy/QtDeclarative/qpydeclarativepropertyvaluesource.sip,
-	qpy/QtDesigner/qpydesigner.pro,
-	qpy/QtDesigner/qpydesignercontainerextension.h,
-	qpy/QtDesigner/qpydesignercontainerextension.sip,
-	qpy/QtDesigner/qpydesignercustomwidgetcollectionplugin.h,
-	qpy/QtDesigner/qpydesignercustomwidgetcollectionplugin.sip,
-	qpy/QtDesigner/qpydesignercustomwidgetplugin.h,
-	qpy/QtDesigner/qpydesignercustomwidgetplugin.sip,
-	qpy/QtDesigner/qpydesignermembersheetextension.h,
-	qpy/QtDesigner/qpydesignermembersheetextension.sip,
-	qpy/QtDesigner/qpydesignerpropertysheetextension.h,
-	qpy/QtDesigner/qpydesignerpropertysheetextension.sip,
-	qpy/QtDesigner/qpydesignertaskmenuextension.h,
-	qpy/QtDesigner/qpydesignertaskmenuextension.sip,
-	qpy/QtGui/qpygui.pro, qpy/QtGui/qpytextobject.h,
-	qpy/QtGui/qpytextobject.sip, qpy/QtOpenGL/opengl_types.sip,
-	qpy/QtOpenGL/qpyopengl.pro, qpy/QtOpenGL/qpyopengl_api.h,
-	qpy/QtOpenGL/qpyopengl_attribute_array.cpp,
-	qpy/QtOpenGL/qpyopengl_uniform_value_array.cpp,
-	sphinx/buffer_interface.rst, sphinx/build_system.rst,
-	sphinx/conf.py, sphinx/dbus.rst, sphinx/deploy_commercial.rst,
-	sphinx/designer.rst, sphinx/gotchas.rst, sphinx/i18n.rst,
-	sphinx/incompatibilities.rst, sphinx/incompatible_apis.rst,
-	sphinx/index.rst, sphinx/installation.rst, sphinx/introduction.rst,
-	sphinx/keyword_arguments.rst, sphinx/new_style_signals_slots.rst,
-	sphinx/old_style_signals_slots.rst, sphinx/pickle.rst,
-	sphinx/pyqt_qsettings.rst, sphinx/pyqt_qvariant.rst,
-	sphinx/python_shell.rst, sphinx/python_v3.rst, sphinx/qml.rst,
-	sphinx/qt_properties.rst, sphinx/qt_v5.rst, sphinx/resources.rst,
-	sphinx/static/default.css, sphinx/static/logo.png,
-	sphinx/static/logo_tn.ico, sphinx/webkit.rst,
-	test/dbus/test_multibus.py, test/runtests.py,
-	test/tests/__init__.py, test/tests/classes/__init__.py,
-	test/tests/classes/test_QObject.py,
-	test/tests/classes/test_QSettings.py,
-	test/tests/classes/test_QStringList.py,
-	test/tests/classes/test_QVariant.py,
-	test/tests/metaobject/__init__.py,
-	test/tests/metaobject/test_connections.py,
-	test/tests/metaobject/test_connections_old_style.py,
-	test/tests/metaobject/test_connectslotsbyname.py,
-	test/tests/metaobject/test_destroyed.py,
-	test/tests/metaobject/test_gc_slots.py,
-	test/tests/metaobject/test_invoke.py,
-	test/tests/metaobject/test_pyqtproperty.py,
-	test/tests/metaobject/test_pyqtsignal.py,
-	test/tests/metaobject/test_pyqtsignature.py,
-	test/tests/metaobject/test_pyqtslot.py,
-	test/tests/metaobject/test_qvariantmap.py,
-	test/tests/metaobject/test_sender.py,
-	test/tests/metaobject/test_signal.py, test/tests/misc/__init__.py,
-	test/tests/misc/test_pickle.py, test/tests/misc/test_repr.py,
-	test/tests/pyuic/QMainWindow/MainWindow00.ui,
-	test/tests/pyuic/QToolBox/ToolBox00.ui,
-	test/tests/pyuic/QToolBox/ToolBox01.ui,
-	test/tests/pyuic/QWidget/Widget00.ui,
-	test/tests/pyuic/QWidget/Widget01.ui,
-	test/tests/pyuic/QWidget/Widget02.ui,
-	test/tests/pyuic/QWidget/Widget03.ui,
-	test/tests/pyuic/QWidget/Widget04.ui,
-	test/tests/pyuic/QWidget/Widget05.ui, test/tests/pyuic/__init__.py,
-	test/tests/pyuic/test_pyuic.py, test/v2_unicode.py,
-	test/v3_unicode.py:
-	Initial import of PyQt5 based on a stripped down PyQt4.
-	[b135a1e082d2]

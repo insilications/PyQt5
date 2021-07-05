@@ -1,1 +1,0 @@
-find %{buildroot} -name '*.so' -print0 | xargs -rt0 chmod 755 --

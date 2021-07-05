@@ -1,7 +1,11 @@
 # This file contains recursive sources that require this package
 Cura
 QGIS
+QGIS-dev
 hplip
 krita
+openshot-qt
 qscintilla
+spyder-ide
 texlive
+texlive-dev
